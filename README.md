@@ -10,6 +10,7 @@ GitHub Actions-only MVP for collecting and reviewing the distribution metrics of
 - skills.sh public install metrics for two specified listings
 - askill.sh public download labels and stars for five listings
 - agentskill.sh installs, recent installs, security scores, verification status, and source API links
+- Tencent SkillHub downloads, installs, stars, versions, security scan results, claim status, and source links for five listings
 - Daily JSON snapshots and a static dashboard
 
 The skills.sh collector tracks only these listings:

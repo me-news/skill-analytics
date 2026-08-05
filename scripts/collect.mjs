@@ -138,6 +138,41 @@ async function collectAgentSkill(skill) {
   }
 }
 
+async function collectSkillHub(skill) {
+  const pageUrl = `${config.skillHubBaseUrl}/${skill.slug}`;
+  const apiUrl = `https://api.skillhub.cn/api/v1/skills/${encodeURIComponent(skill.slug)}?namespace=${encodeURIComponent(config.skillHubNamespace)}`;
+  try {
+    const payload = await getJson(apiUrl);
+    const item = payload.skill;
+    return {
+      status: item?.slug === skill.slug ? 'ok' : 'unavailable',
+      url: pageUrl,
+      apiUrl,
+      version: payload.latestVersion?.version ?? item?.tags?.latest ?? null,
+      source: item?.source ?? null,
+      metrics: {
+        downloads: item?.stats?.downloads ?? null,
+        installs: item?.stats?.installs ?? null,
+        stars: item?.stats?.stars ?? null,
+        versions: item?.stats?.versions ?? null,
+        comments: item?.stats?.comments ?? null
+      },
+      security: {
+        keen: payload.securityReports?.keen?.status ?? null,
+        sanbu: payload.securityReports?.sanbu?.status ?? null
+      },
+      claimState: item?.claim_state ?? null,
+      claimable: item?.claimable ?? false,
+      verified: item?.verified ?? false,
+      contentZhAvailable: payload.contentZhAvailable ?? false,
+      updatedAt: item?.updatedAt ? new Date(item.updatedAt).toISOString() : null,
+      note: 'SkillHub metrics are stored separately and are not added to other platforms.'
+    };
+  } catch (error) {
+    return { status: 'error', url: pageUrl, apiUrl, error: error.message, metrics: {} };
+  }
+}
+
 async function collectGitHub() {
   const url = `https://api.github.com/repos/${config.repository}`;
   const headers = process.env.GITHUB_TOKEN
@@ -192,9 +227,14 @@ const agentSkillListings = await Promise.all(config.clawhubSkills.map(async (ski
   priority: skill.priority,
   data: await collectAgentSkill(skill)
 })));
+const skillHubListings = await Promise.all(config.clawhubSkills.map(async (skill) => ({
+  slug: skill.slug,
+  priority: skill.priority,
+  data: await collectSkillHub(skill)
+})));
 
 const snapshot = {
-  schemaVersion: 4,
+  schemaVersion: 5,
   collectedAt,
   date,
   timezone: config.timezone,
@@ -203,7 +243,8 @@ const snapshot = {
   clawhubSkills,
   skillsShListings,
   askillSkills,
-  agentSkillListings
+  agentSkillListings,
+  skillHubListings
 };
 
 const dailyDir = path.join(root, 'data/daily');
@@ -211,7 +252,7 @@ await mkdir(dailyDir, { recursive: true });
 await writeFile(path.join(dailyDir, `${date}.json`), `${JSON.stringify(snapshot, null, 2)}\n`);
 await writeFile(path.join(root, 'data/latest.json'), `${JSON.stringify(snapshot, null, 2)}\n`);
 
-const failures = [github, ...clawhubSkills.map((skill) => skill.data), ...skillsShListings.map((listing) => listing.data), ...askillSkills.map((skill) => skill.data), ...agentSkillListings.map((skill) => skill.data)]
+const failures = [github, ...clawhubSkills.map((skill) => skill.data), ...skillsShListings.map((listing) => listing.data), ...askillSkills.map((skill) => skill.data), ...agentSkillListings.map((skill) => skill.data), ...skillHubListings.map((skill) => skill.data)]
   .filter((platform) => platform.status === 'error');
-console.log(`Collected ${clawhubSkills.length} ClawHub, ${skillsShListings.length} skills.sh, ${askillSkills.length} askill.sh, and ${agentSkillListings.length} agentskill.sh listings at ${collectedAt}; hard failures: ${failures.length}`);
+console.log(`Collected ${clawhubSkills.length} ClawHub, ${skillsShListings.length} skills.sh, ${askillSkills.length} askill.sh, ${agentSkillListings.length} agentskill.sh, and ${skillHubListings.length} SkillHub listings at ${collectedAt}; hard failures: ${failures.length}`);
 if (failures.length) process.exitCode = 1;

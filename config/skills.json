@@ -4,6 +4,8 @@
   "clawhubOwner": "jamesmenews",
   "askillBaseUrl": "https://askill.sh/skills/gh/me-news/agent-skills",
   "agentSkillBaseUrl": "https://agentskill.sh/@me-news",
+  "skillHubBaseUrl": "https://skillhub.cloud.tencent.com/skills/jamesmenews",
+  "skillHubNamespace": "jamesmenews",
   "clawhubSkills": [
     { "slug": "ai-news-pro", "priority": 1 },
     { "slug": "menews", "priority": 2 },

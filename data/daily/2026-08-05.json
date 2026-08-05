@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 4,
-  "collectedAt": "2026-08-05T06:17:56.016Z",
+  "schemaVersion": 5,
+  "collectedAt": "2026-08-05T13:30:39.289Z",
   "date": "2026-08-05",
   "timezone": "Asia/Hong_Kong",
   "repository": "me-news/agent-skills",
@@ -27,7 +27,7 @@
         "url": "https://clawhub.ai/jamesmenews/ai-news-pro",
         "version": "0.9.1",
         "metrics": {
-          "downloads": 599,
+          "downloads": 603,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -44,7 +44,7 @@
         "url": "https://clawhub.ai/jamesmenews/menews",
         "version": "1.0.11",
         "metrics": {
-          "downloads": 1234,
+          "downloads": 1239,
           "installs": 36,
           "stars": 0,
           "versions": 12,
@@ -61,7 +61,7 @@
         "url": "https://clawhub.ai/jamesmenews/aimpact",
         "version": "0.8.1",
         "metrics": {
-          "downloads": 593,
+          "downloads": 596,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -78,7 +78,7 @@
         "url": "https://clawhub.ai/jamesmenews/aimpact-crypto",
         "version": "0.8.1",
         "metrics": {
-          "downloads": 603,
+          "downloads": 606,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -95,7 +95,7 @@
         "url": "https://clawhub.ai/jamesmenews/aimpact-prediction-market",
         "version": "1.0.1",
         "metrics": {
-          "downloads": 592,
+          "downloads": 595,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -329,6 +329,148 @@
         },
         "verified": false,
         "lastCrawledAt": "2026-08-05T06:13:19.982Z"
+      }
+    }
+  ],
+  "skillHubListings": [
+    {
+      "slug": "ai-news-pro",
+      "priority": 1,
+      "data": {
+        "status": "ok",
+        "url": "https://skillhub.cloud.tencent.com/skills/jamesmenews/ai-news-pro",
+        "apiUrl": "https://api.skillhub.cn/api/v1/skills/ai-news-pro?namespace=jamesmenews",
+        "version": "0.9.1",
+        "source": "clawhub",
+        "metrics": {
+          "downloads": 621,
+          "installs": 16,
+          "stars": 0,
+          "versions": 1,
+          "comments": 0
+        },
+        "security": {
+          "keen": "benign",
+          "sanbu": "benign"
+        },
+        "claimState": "unclaimed",
+        "claimable": true,
+        "verified": false,
+        "contentZhAvailable": false,
+        "updatedAt": "2026-08-05T09:29:41.885Z",
+        "note": "SkillHub metrics are stored separately and are not added to other platforms."
+      }
+    },
+    {
+      "slug": "menews",
+      "priority": 2,
+      "data": {
+        "status": "ok",
+        "url": "https://skillhub.cloud.tencent.com/skills/jamesmenews/menews",
+        "apiUrl": "https://api.skillhub.cn/api/v1/skills/menews?namespace=jamesmenews",
+        "version": "1.0.11",
+        "source": "clawhub",
+        "metrics": {
+          "downloads": 1212,
+          "installs": 36,
+          "stars": 0,
+          "versions": 3,
+          "comments": 0
+        },
+        "security": {
+          "keen": "benign",
+          "sanbu": "benign"
+        },
+        "claimState": "unclaimed",
+        "claimable": true,
+        "verified": false,
+        "contentZhAvailable": false,
+        "updatedAt": "2026-08-05T13:19:38.418Z",
+        "note": "SkillHub metrics are stored separately and are not added to other platforms."
+      }
+    },
+    {
+      "slug": "aimpact",
+      "priority": 3,
+      "data": {
+        "status": "ok",
+        "url": "https://skillhub.cloud.tencent.com/skills/jamesmenews/aimpact",
+        "apiUrl": "https://api.skillhub.cn/api/v1/skills/aimpact?namespace=jamesmenews",
+        "version": "0.8.1",
+        "source": "clawhub",
+        "metrics": {
+          "downloads": 616,
+          "installs": 16,
+          "stars": 0,
+          "versions": 1,
+          "comments": 0
+        },
+        "security": {
+          "keen": "benign",
+          "sanbu": "benign"
+        },
+        "claimState": "unclaimed",
+        "claimable": true,
+        "verified": false,
+        "contentZhAvailable": false,
+        "updatedAt": "2026-08-05T09:29:43.213Z",
+        "note": "SkillHub metrics are stored separately and are not added to other platforms."
+      }
+    },
+    {
+      "slug": "aimpact-crypto",
+      "priority": 4,
+      "data": {
+        "status": "ok",
+        "url": "https://skillhub.cloud.tencent.com/skills/jamesmenews/aimpact-crypto",
+        "apiUrl": "https://api.skillhub.cn/api/v1/skills/aimpact-crypto?namespace=jamesmenews",
+        "version": "0.8.1",
+        "source": "clawhub",
+        "metrics": {
+          "downloads": 635,
+          "installs": 16,
+          "stars": 0,
+          "versions": 1,
+          "comments": 0
+        },
+        "security": {
+          "keen": "benign",
+          "sanbu": "benign"
+        },
+        "claimState": "unclaimed",
+        "claimable": false,
+        "verified": false,
+        "contentZhAvailable": false,
+        "updatedAt": "2026-08-05T09:22:36.602Z",
+        "note": "SkillHub metrics are stored separately and are not added to other platforms."
+      }
+    },
+    {
+      "slug": "aimpact-prediction-market",
+      "priority": 5,
+      "data": {
+        "status": "ok",
+        "url": "https://skillhub.cloud.tencent.com/skills/jamesmenews/aimpact-prediction-market",
+        "apiUrl": "https://api.skillhub.cn/api/v1/skills/aimpact-prediction-market?namespace=jamesmenews",
+        "version": "1.0.1",
+        "source": "clawhub",
+        "metrics": {
+          "downloads": 621,
+          "installs": 16,
+          "stars": 0,
+          "versions": 1,
+          "comments": 0
+        },
+        "security": {
+          "keen": "benign",
+          "sanbu": "benign"
+        },
+        "claimState": "unclaimed",
+        "claimable": true,
+        "verified": false,
+        "contentZhAvailable": false,
+        "updatedAt": "2026-08-05T03:33:13.602Z",
+        "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     }
   ]
