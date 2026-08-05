@@ -9,6 +9,7 @@ GitHub Actions-only MVP for collecting and reviewing the distribution metrics of
 - GitHub repository metrics
 - skills.sh public install metrics for two specified listings
 - askill.sh public download labels and stars for five listings
+- agentskill.sh installs, recent installs, security scores, verification status, and source API links
 - Daily JSON snapshots and a static dashboard
 
 The skills.sh collector tracks only these listings:

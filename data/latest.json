@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 3,
-  "collectedAt": "2026-08-05T06:08:50.429Z",
+  "schemaVersion": 4,
+  "collectedAt": "2026-08-05T06:17:56.016Z",
   "date": "2026-08-05",
   "timezone": "Asia/Hong_Kong",
   "repository": "me-news/agent-skills",
@@ -222,6 +222,113 @@
           "stars": 0
         },
         "note": "askill.sh exposes an abbreviated download label on its public page."
+      }
+    }
+  ],
+  "agentSkillListings": [
+    {
+      "slug": "ai-news-pro",
+      "priority": 1,
+      "data": {
+        "status": "ok",
+        "url": "https://agentskill.sh/@me-news/ai-news-pro",
+        "apiUrl": "https://agentskill.sh/api/skills/me-news%2Fai-news-pro",
+        "metrics": {
+          "installs": 0,
+          "installs24h": 0,
+          "installs3d": 0,
+          "installs7d": 0,
+          "securityScore": 95,
+          "qualityScore": 0,
+          "githubStars": 0,
+          "ratingCount": 0
+        },
+        "verified": false,
+        "lastCrawledAt": "2026-08-05T06:13:17.526Z"
+      }
+    },
+    {
+      "slug": "menews",
+      "priority": 2,
+      "data": {
+        "status": "ok",
+        "url": "https://agentskill.sh/@me-news/menews",
+        "apiUrl": "https://agentskill.sh/api/skills/me-news%2Fmenews",
+        "metrics": {
+          "installs": 0,
+          "installs24h": 0,
+          "installs3d": 0,
+          "installs7d": 0,
+          "securityScore": 95,
+          "qualityScore": 0,
+          "githubStars": 0,
+          "ratingCount": 0
+        },
+        "verified": false,
+        "lastCrawledAt": "2026-08-05T06:13:22.463Z"
+      }
+    },
+    {
+      "slug": "aimpact",
+      "priority": 3,
+      "data": {
+        "status": "ok",
+        "url": "https://agentskill.sh/@me-news/aimpact",
+        "apiUrl": "https://agentskill.sh/api/skills/me-news%2Faimpact",
+        "metrics": {
+          "installs": 0,
+          "installs24h": 0,
+          "installs3d": 0,
+          "installs7d": 0,
+          "securityScore": 95,
+          "qualityScore": 0,
+          "githubStars": 0,
+          "ratingCount": 0
+        },
+        "verified": false,
+        "lastCrawledAt": "2026-08-05T06:13:21.225Z"
+      }
+    },
+    {
+      "slug": "aimpact-crypto",
+      "priority": 4,
+      "data": {
+        "status": "ok",
+        "url": "https://agentskill.sh/@me-news/aimpact-crypto",
+        "apiUrl": "https://agentskill.sh/api/skills/me-news%2Faimpact-crypto",
+        "metrics": {
+          "installs": 0,
+          "installs24h": 0,
+          "installs3d": 0,
+          "installs7d": 0,
+          "securityScore": 95,
+          "qualityScore": 0,
+          "githubStars": 0,
+          "ratingCount": 0
+        },
+        "verified": false,
+        "lastCrawledAt": "2026-08-05T06:13:18.780Z"
+      }
+    },
+    {
+      "slug": "aimpact-prediction-market",
+      "priority": 5,
+      "data": {
+        "status": "ok",
+        "url": "https://agentskill.sh/@me-news/aimpact-prediction-market",
+        "apiUrl": "https://agentskill.sh/api/skills/me-news%2Faimpact-prediction-market",
+        "metrics": {
+          "installs": 0,
+          "installs24h": 0,
+          "installs3d": 0,
+          "installs7d": 0,
+          "securityScore": 95,
+          "qualityScore": 0,
+          "githubStars": 0,
+          "ratingCount": 0
+        },
+        "verified": false,
+        "lastCrawledAt": "2026-08-05T06:13:19.982Z"
       }
     }
   ]

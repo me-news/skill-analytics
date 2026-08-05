@@ -110,6 +110,34 @@ async function collectAskill(skill) {
   }
 }
 
+async function collectAgentSkill(skill) {
+  const pageUrl = `${config.agentSkillBaseUrl}/${skill.slug}`;
+  const apiUrl = `https://agentskill.sh/api/skills/${encodeURIComponent(`me-news/${skill.slug}`)}`;
+  try {
+    const payload = await getJson(apiUrl);
+    const item = payload.data;
+    return {
+      status: item?.isActive ? 'ok' : 'inactive',
+      url: pageUrl,
+      apiUrl,
+      metrics: {
+        installs: item?.installCount ?? null,
+        installs24h: item?.recentInstalls24h ?? null,
+        installs3d: item?.recentInstalls3d ?? null,
+        installs7d: item?.recentInstalls7d ?? null,
+        securityScore: item?.securityScore ?? null,
+        qualityScore: item?.qualityReview?.score ?? item?.contentQualityScore ?? null,
+        githubStars: item?.githubStars ?? null,
+        ratingCount: item?.ratingCount ?? null
+      },
+      verified: item?.isVerified ?? false,
+      lastCrawledAt: item?.lastCrawledAt ?? null
+    };
+  } catch (error) {
+    return { status: 'error', url: pageUrl, apiUrl, error: error.message, metrics: {} };
+  }
+}
+
 async function collectGitHub() {
   const url = `https://api.github.com/repos/${config.repository}`;
   const headers = process.env.GITHUB_TOKEN
@@ -159,9 +187,14 @@ const askillSkills = await Promise.all(config.clawhubSkills.map(async (skill) =>
   priority: skill.priority,
   data: await collectAskill(skill)
 })));
+const agentSkillListings = await Promise.all(config.clawhubSkills.map(async (skill) => ({
+  slug: skill.slug,
+  priority: skill.priority,
+  data: await collectAgentSkill(skill)
+})));
 
 const snapshot = {
-  schemaVersion: 3,
+  schemaVersion: 4,
   collectedAt,
   date,
   timezone: config.timezone,
@@ -169,7 +202,8 @@ const snapshot = {
   sharedPlatforms: { github },
   clawhubSkills,
   skillsShListings,
-  askillSkills
+  askillSkills,
+  agentSkillListings
 };
 
 const dailyDir = path.join(root, 'data/daily');
@@ -177,7 +211,7 @@ await mkdir(dailyDir, { recursive: true });
 await writeFile(path.join(dailyDir, `${date}.json`), `${JSON.stringify(snapshot, null, 2)}\n`);
 await writeFile(path.join(root, 'data/latest.json'), `${JSON.stringify(snapshot, null, 2)}\n`);
 
-const failures = [github, ...clawhubSkills.map((skill) => skill.data), ...skillsShListings.map((listing) => listing.data), ...askillSkills.map((skill) => skill.data)]
+const failures = [github, ...clawhubSkills.map((skill) => skill.data), ...skillsShListings.map((listing) => listing.data), ...askillSkills.map((skill) => skill.data), ...agentSkillListings.map((skill) => skill.data)]
   .filter((platform) => platform.status === 'error');
-console.log(`Collected ${clawhubSkills.length} ClawHub, ${skillsShListings.length} skills.sh, and ${askillSkills.length} askill.sh listings at ${collectedAt}; hard failures: ${failures.length}`);
+console.log(`Collected ${clawhubSkills.length} ClawHub, ${skillsShListings.length} skills.sh, ${askillSkills.length} askill.sh, and ${agentSkillListings.length} agentskill.sh listings at ${collectedAt}; hard failures: ${failures.length}`);
 if (failures.length) process.exitCode = 1;
