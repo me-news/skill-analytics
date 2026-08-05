@@ -2,6 +2,7 @@
   "timezone": "Asia/Hong_Kong",
   "repository": "me-news/agent-skills",
   "clawhubOwner": "jamesmenews",
+  "askillBaseUrl": "https://askill.sh/skills/gh/me-news/agent-skills",
   "clawhubSkills": [
     { "slug": "ai-news-pro", "priority": 1 },
     { "slug": "menews", "priority": 2 },

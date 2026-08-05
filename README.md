@@ -8,6 +8,7 @@ GitHub Actions-only MVP for collecting and reviewing the distribution metrics of
 - ClawHub downloads, installs, stars, comments, and version metrics
 - GitHub repository metrics
 - skills.sh public install metrics for two specified listings
+- askill.sh public download labels and stars for five listings
 - Daily JSON snapshots and a static dashboard
 
 The skills.sh collector tracks only these listings:
@@ -16,6 +17,8 @@ The skills.sh collector tracks only these listings:
 - `https://www.skills.sh/jamesmenews/ai-news/ai-news`
 
 These values are parsed from public HTML because the supported API requires a Vercel OIDC token. Public HTML may change, so collection status is stored with every snapshot.
+
+askill.sh currently exposes abbreviated public download labels such as `1.2k`. The collector stores the displayed label instead of presenting it as an exact count.
 
 ## Run locally
 

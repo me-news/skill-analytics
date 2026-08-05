@@ -1,8 +1,8 @@
 {
   "snapshots": [
     {
-      "schemaVersion": 2,
-      "collectedAt": "2026-08-05T02:52:18.995Z",
+      "schemaVersion": 3,
+      "collectedAt": "2026-08-05T06:08:50.429Z",
       "date": "2026-08-05",
       "timezone": "Asia/Hong_Kong",
       "repository": "me-news/agent-skills",
@@ -152,6 +152,78 @@
               ]
             },
             "note": "Metrics parsed from public HTML; use the authenticated API when available."
+          }
+        }
+      ],
+      "askillSkills": [
+        {
+          "slug": "ai-news-pro",
+          "priority": 1,
+          "data": {
+            "status": "ok",
+            "url": "https://askill.sh/skills/gh/me-news/agent-skills/@ai-news-pro",
+            "httpStatus": 200,
+            "metrics": {
+              "downloadsLabel": "1.2k",
+              "stars": 0
+            },
+            "note": "askill.sh exposes an abbreviated download label on its public page."
+          }
+        },
+        {
+          "slug": "menews",
+          "priority": 2,
+          "data": {
+            "status": "ok",
+            "url": "https://askill.sh/skills/gh/me-news/agent-skills/@menews",
+            "httpStatus": 200,
+            "metrics": {
+              "downloadsLabel": "1.2k",
+              "stars": 0
+            },
+            "note": "askill.sh exposes an abbreviated download label on its public page."
+          }
+        },
+        {
+          "slug": "aimpact",
+          "priority": 3,
+          "data": {
+            "status": "ok",
+            "url": "https://askill.sh/skills/gh/me-news/agent-skills/@aimpact",
+            "httpStatus": 200,
+            "metrics": {
+              "downloadsLabel": "1.2k",
+              "stars": 0
+            },
+            "note": "askill.sh exposes an abbreviated download label on its public page."
+          }
+        },
+        {
+          "slug": "aimpact-crypto",
+          "priority": 4,
+          "data": {
+            "status": "ok",
+            "url": "https://askill.sh/skills/gh/me-news/agent-skills/@aimpact-crypto",
+            "httpStatus": 200,
+            "metrics": {
+              "downloadsLabel": "1.2k",
+              "stars": 0
+            },
+            "note": "askill.sh exposes an abbreviated download label on its public page."
+          }
+        },
+        {
+          "slug": "aimpact-prediction-market",
+          "priority": 5,
+          "data": {
+            "status": "ok",
+            "url": "https://askill.sh/skills/gh/me-news/agent-skills/@aimpact-prediction-market",
+            "httpStatus": 200,
+            "metrics": {
+              "downloadsLabel": "1.2k",
+              "stars": 0
+            },
+            "note": "askill.sh exposes an abbreviated download label on its public page."
           }
         }
       ]

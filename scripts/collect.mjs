@@ -84,6 +84,32 @@ async function collectSkillsSh(listing) {
   }
 }
 
+async function collectAskill(skill) {
+  const url = `${config.askillBaseUrl}/@${skill.slug}`;
+  try {
+    const response = await fetch(url, {
+      headers: { 'User-Agent': 'me-news-skill-analytics/0.1' },
+      redirect: 'follow', signal: AbortSignal.timeout(20_000)
+    });
+    const body = await response.text();
+    if (!response.ok) throw new Error(`HTTP ${response.status} ${response.statusText}`);
+    const downloadsLabel = body.match(/>([\d.,]+[kKmM]?) downloads<\/span>/i)?.[1] ?? null;
+    const starsLabel = body.match(/>([\d,]+)(?:<!-- -->)? stars<\/span>/i)?.[1] ?? null;
+    return {
+      status: downloadsLabel ? 'ok' : 'public-page-only',
+      url,
+      httpStatus: response.status,
+      metrics: {
+        downloadsLabel,
+        stars: starsLabel == null ? null : Number.parseInt(starsLabel.replaceAll(',', ''), 10)
+      },
+      note: 'askill.sh exposes an abbreviated download label on its public page.'
+    };
+  } catch (error) {
+    return { status: 'error', url, error: error.message, metrics: {} };
+  }
+}
+
 async function collectGitHub() {
   const url = `https://api.github.com/repos/${config.repository}`;
   const headers = process.env.GITHUB_TOKEN
@@ -128,16 +154,22 @@ const skillsShListings = await Promise.all(config.skillsShListings.map(async (li
   name: listing.name,
   data: await collectSkillsSh(listing)
 })));
+const askillSkills = await Promise.all(config.clawhubSkills.map(async (skill) => ({
+  slug: skill.slug,
+  priority: skill.priority,
+  data: await collectAskill(skill)
+})));
 
 const snapshot = {
-  schemaVersion: 2,
+  schemaVersion: 3,
   collectedAt,
   date,
   timezone: config.timezone,
   repository: config.repository,
   sharedPlatforms: { github },
   clawhubSkills,
-  skillsShListings
+  skillsShListings,
+  askillSkills
 };
 
 const dailyDir = path.join(root, 'data/daily');
@@ -145,7 +177,7 @@ await mkdir(dailyDir, { recursive: true });
 await writeFile(path.join(dailyDir, `${date}.json`), `${JSON.stringify(snapshot, null, 2)}\n`);
 await writeFile(path.join(root, 'data/latest.json'), `${JSON.stringify(snapshot, null, 2)}\n`);
 
-const failures = [github, ...clawhubSkills.map((skill) => skill.data), ...skillsShListings.map((listing) => listing.data)]
+const failures = [github, ...clawhubSkills.map((skill) => skill.data), ...skillsShListings.map((listing) => listing.data), ...askillSkills.map((skill) => skill.data)]
   .filter((platform) => platform.status === 'error');
-console.log(`Collected ${clawhubSkills.length} ClawHub skills and ${skillsShListings.length} skills.sh listings at ${collectedAt}; hard failures: ${failures.length}`);
+console.log(`Collected ${clawhubSkills.length} ClawHub, ${skillsShListings.length} skills.sh, and ${askillSkills.length} askill.sh listings at ${collectedAt}; hard failures: ${failures.length}`);
 if (failures.length) process.exitCode = 1;
