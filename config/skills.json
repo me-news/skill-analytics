@@ -2,11 +2,23 @@
   "timezone": "Asia/Hong_Kong",
   "repository": "me-news/agent-skills",
   "clawhubOwner": "jamesmenews",
-  "skills": [
+  "clawhubSkills": [
     { "slug": "ai-news-pro", "priority": 1 },
     { "slug": "menews", "priority": 2 },
     { "slug": "aimpact", "priority": 3 },
     { "slug": "aimpact-crypto", "priority": 4 },
     { "slug": "aimpact-prediction-market", "priority": 5 }
+  ],
+  "skillsShListings": [
+    {
+      "id": "menews-volces",
+      "name": "menews",
+      "url": "https://www.skills.sh/site/skills.volces.com/menews"
+    },
+    {
+      "id": "ai-news-github",
+      "name": "ai-news",
+      "url": "https://www.skills.sh/jamesmenews/ai-news/ai-news"
+    }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "collectedAt": "2026-08-05T02:45:53.624Z",
+  "schemaVersion": 2,
+  "collectedAt": "2026-08-05T02:50:45.604Z",
   "date": "2026-08-05",
   "timezone": "Asia/Hong_Kong",
   "repository": "me-news/agent-skills",
@@ -18,135 +18,138 @@
       "pushedAt": "2026-08-05T02:31:15Z"
     }
   },
-  "skills": [
+  "clawhubSkills": [
     {
       "slug": "ai-news-pro",
       "priority": 1,
-      "platforms": {
-        "clawhub": {
-          "status": "ok",
-          "url": "https://clawhub.ai/jamesmenews/ai-news-pro",
-          "version": "0.9.1",
-          "metrics": {
-            "downloads": 599,
-            "installs": 16,
-            "stars": 0,
-            "versions": 2,
-            "comments": 0
-          },
-          "updatedAt": "2026-05-11T09:43:51.819Z"
+      "data": {
+        "status": "ok",
+        "url": "https://clawhub.ai/jamesmenews/ai-news-pro",
+        "version": "0.9.1",
+        "metrics": {
+          "downloads": 599,
+          "installs": 16,
+          "stars": 0,
+          "versions": 2,
+          "comments": 0
         },
-        "skillsSh": {
-          "status": "unavailable",
-          "url": "https://skills.sh/me-news/agent-skills/ai-news-pro",
-          "httpStatus": 200,
-          "metrics": {},
-          "note": "Public page reports that the skill is unavailable."
-        }
+        "updatedAt": "2026-05-11T09:43:51.819Z"
       }
     },
     {
       "slug": "menews",
       "priority": 2,
-      "platforms": {
-        "clawhub": {
-          "status": "ok",
-          "url": "https://clawhub.ai/jamesmenews/menews",
-          "version": "1.0.11",
-          "metrics": {
-            "downloads": 1234,
-            "installs": 36,
-            "stars": 0,
-            "versions": 12,
-            "comments": 0
-          },
-          "updatedAt": "2026-05-11T09:30:16.516Z"
+      "data": {
+        "status": "ok",
+        "url": "https://clawhub.ai/jamesmenews/menews",
+        "version": "1.0.11",
+        "metrics": {
+          "downloads": 1234,
+          "installs": 36,
+          "stars": 0,
+          "versions": 12,
+          "comments": 0
         },
-        "skillsSh": {
-          "status": "unavailable",
-          "url": "https://skills.sh/me-news/agent-skills/menews",
-          "httpStatus": 200,
-          "metrics": {},
-          "note": "Public page reports that the skill is unavailable."
-        }
+        "updatedAt": "2026-05-11T09:30:16.516Z"
       }
     },
     {
       "slug": "aimpact",
       "priority": 3,
-      "platforms": {
-        "clawhub": {
-          "status": "ok",
-          "url": "https://clawhub.ai/jamesmenews/aimpact",
-          "version": "0.8.1",
-          "metrics": {
-            "downloads": 593,
-            "installs": 16,
-            "stars": 0,
-            "versions": 2,
-            "comments": 0
-          },
-          "updatedAt": "2026-05-11T09:43:48.979Z"
+      "data": {
+        "status": "ok",
+        "url": "https://clawhub.ai/jamesmenews/aimpact",
+        "version": "0.8.1",
+        "metrics": {
+          "downloads": 593,
+          "installs": 16,
+          "stars": 0,
+          "versions": 2,
+          "comments": 0
         },
-        "skillsSh": {
-          "status": "unavailable",
-          "url": "https://skills.sh/me-news/agent-skills/aimpact",
-          "httpStatus": 200,
-          "metrics": {},
-          "note": "Public page reports that the skill is unavailable."
-        }
+        "updatedAt": "2026-05-11T09:43:48.979Z"
       }
     },
     {
       "slug": "aimpact-crypto",
       "priority": 4,
-      "platforms": {
-        "clawhub": {
-          "status": "ok",
-          "url": "https://clawhub.ai/jamesmenews/aimpact-crypto",
-          "version": "0.8.1",
-          "metrics": {
-            "downloads": 603,
-            "installs": 16,
-            "stars": 0,
-            "versions": 2,
-            "comments": 0
-          },
-          "updatedAt": "2026-05-11T09:43:48.979Z"
+      "data": {
+        "status": "ok",
+        "url": "https://clawhub.ai/jamesmenews/aimpact-crypto",
+        "version": "0.8.1",
+        "metrics": {
+          "downloads": 603,
+          "installs": 16,
+          "stars": 0,
+          "versions": 2,
+          "comments": 0
         },
-        "skillsSh": {
-          "status": "unavailable",
-          "url": "https://skills.sh/me-news/agent-skills/aimpact-crypto",
-          "httpStatus": 200,
-          "metrics": {},
-          "note": "Public page reports that the skill is unavailable."
-        }
+        "updatedAt": "2026-05-11T09:43:48.979Z"
       }
     },
     {
       "slug": "aimpact-prediction-market",
       "priority": 5,
-      "platforms": {
-        "clawhub": {
-          "status": "ok",
-          "url": "https://clawhub.ai/jamesmenews/aimpact-prediction-market",
-          "version": "1.0.1",
-          "metrics": {
-            "downloads": 592,
-            "installs": 16,
-            "stars": 0,
-            "versions": 2,
-            "comments": 0
-          },
-          "updatedAt": "2026-05-11T09:43:48.979Z"
+      "data": {
+        "status": "ok",
+        "url": "https://clawhub.ai/jamesmenews/aimpact-prediction-market",
+        "version": "1.0.1",
+        "metrics": {
+          "downloads": 592,
+          "installs": 16,
+          "stars": 0,
+          "versions": 2,
+          "comments": 0
         },
-        "skillsSh": {
-          "status": "unavailable",
-          "url": "https://skills.sh/me-news/agent-skills/aimpact-prediction-market",
-          "httpStatus": 200,
-          "metrics": {},
-          "note": "Public page reports that the skill is unavailable."
-        }
+        "updatedAt": "2026-05-11T09:43:48.979Z"
+      }
+    }
+  ],
+  "skillsShListings": [
+    {
+      "id": "menews-volces",
+      "name": "menews",
+      "data": {
+        "status": "ok",
+        "url": "https://www.skills.sh/site/skills.volces.com/menews",
+        "httpStatus": 200,
+        "metrics": {
+          "installs": 2,
+          "weeklyInstalls": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "note": "Metrics parsed from public HTML; use the authenticated API when available."
+      }
+    },
+    {
+      "id": "ai-news-github",
+      "name": "ai-news",
+      "data": {
+        "status": "ok",
+        "url": "https://www.skills.sh/jamesmenews/ai-news/ai-news",
+        "httpStatus": 200,
+        "metrics": {
+          "installs": 4,
+          "weeklyInstalls": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "note": "Metrics parsed from public HTML; use the authenticated API when available."
       }
     }
   ]

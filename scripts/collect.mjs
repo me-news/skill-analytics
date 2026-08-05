@@ -50,8 +50,8 @@ async function collectClawHub(skill) {
   }
 }
 
-async function collectSkillsSh(skill) {
-  const url = `https://skills.sh/${config.repository}/${skill.slug}`;
+async function collectSkillsSh(listing) {
+  const { url } = listing;
   try {
     const response = await fetch(url, {
       headers: { 'User-Agent': 'me-news-skill-analytics/0.1' },
@@ -59,14 +59,25 @@ async function collectSkillsSh(skill) {
     });
     const body = await response.text();
     const unavailable = /isn.t available in this repository/i.test(body);
+    const structuredInstalls = body.match(/"userInteractionCount"\s*:\s*(\d+)/i)?.[1];
+    const visibleInstalls = body.match(/Installs(?:<\/span>)?<\/div><div[^>]*text-3xl[^>]*>([\d,]+)/i)?.[1];
+    const weeklyValues = body.match(/aria-label="Weekly installs:\s*([^"]+)"/i)?.[1];
+    const weeklyInstalls = weeklyValues
+      ? weeklyValues.split(',').map((value) => Number.parseInt(value.trim(), 10))
+      : null;
+    const installs = Number.parseInt((structuredInstalls ?? visibleInstalls ?? '').replaceAll(',', ''), 10);
     return {
-      status: response.ok && !unavailable ? 'public-page-only' : 'unavailable',
+      status: response.ok && !unavailable && Number.isFinite(installs) ? 'ok' :
+        response.ok && !unavailable ? 'public-page-only' : 'unavailable',
       url,
       httpStatus: response.status,
-      metrics: {},
+      metrics: {
+        installs: Number.isFinite(installs) ? installs : null,
+        weeklyInstalls: weeklyInstalls?.every(Number.isFinite) ? weeklyInstalls : null
+      },
       note: unavailable
         ? 'Public page reports that the skill is unavailable.'
-        : 'Install metrics require the authenticated skills.sh API with Vercel OIDC.'
+        : 'Metrics parsed from public HTML; use the authenticated API when available.'
     };
   } catch (error) {
     return { status: 'error', url, error: error.message, metrics: {} };
@@ -107,23 +118,26 @@ async function collectGitHub() {
 }
 
 const github = await collectGitHub();
-const skills = [];
-for (const skill of config.skills) {
-  const [clawhub, skillsSh] = await Promise.all([
-    collectClawHub(skill),
-    collectSkillsSh(skill)
-  ]);
-  skills.push({ slug: skill.slug, priority: skill.priority, platforms: { clawhub, skillsSh } });
-}
+const clawhubSkills = await Promise.all(config.clawhubSkills.map(async (skill) => ({
+  slug: skill.slug,
+  priority: skill.priority,
+  data: await collectClawHub(skill)
+})));
+const skillsShListings = await Promise.all(config.skillsShListings.map(async (listing) => ({
+  id: listing.id,
+  name: listing.name,
+  data: await collectSkillsSh(listing)
+})));
 
 const snapshot = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   collectedAt,
   date,
   timezone: config.timezone,
   repository: config.repository,
   sharedPlatforms: { github },
-  skills
+  clawhubSkills,
+  skillsShListings
 };
 
 const dailyDir = path.join(root, 'data/daily');
@@ -131,7 +145,7 @@ await mkdir(dailyDir, { recursive: true });
 await writeFile(path.join(dailyDir, `${date}.json`), `${JSON.stringify(snapshot, null, 2)}\n`);
 await writeFile(path.join(root, 'data/latest.json'), `${JSON.stringify(snapshot, null, 2)}\n`);
 
-const failures = [github, ...skills.flatMap((skill) => Object.values(skill.platforms))]
+const failures = [github, ...clawhubSkills.map((skill) => skill.data), ...skillsShListings.map((listing) => listing.data)]
   .filter((platform) => platform.status === 'error');
-console.log(`Collected ${skills.length} skills at ${collectedAt}; hard failures: ${failures.length}`);
+console.log(`Collected ${clawhubSkills.length} ClawHub skills and ${skillsShListings.length} skills.sh listings at ${collectedAt}; hard failures: ${failures.length}`);
 if (failures.length) process.exitCode = 1;

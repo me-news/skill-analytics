@@ -4,13 +4,18 @@ GitHub Actions-only MVP for collecting and reviewing the distribution metrics of
 
 ## Scope
 
-- Five skills from `me-news/agent-skills`
-- ClawHub public API metrics
+- Five published skills from the `jamesmenews` ClawHub account
+- ClawHub downloads, installs, stars, comments, and version metrics
 - GitHub repository metrics
-- skills.sh public listing availability
+- skills.sh public install metrics for two specified listings
 - Daily JSON snapshots and a static dashboard
 
-skills.sh install metrics are intentionally not scraped. Its supported API requires a Vercel OIDC token, so this MVP records public-page availability until an authenticated adapter is added.
+The skills.sh collector tracks only these listings:
+
+- `https://www.skills.sh/site/skills.volces.com/menews`
+- `https://www.skills.sh/jamesmenews/ai-news/ai-news`
+
+These values are parsed from public HTML because the supported API requires a Vercel OIDC token. Public HTML may change, so collection status is stored with every snapshot.
 
 ## Run locally
 
