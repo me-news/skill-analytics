@@ -1,0 +1,27 @@
+import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+
+const root = path.resolve(import.meta.dirname, '..');
+const dailyDir = path.join(root, 'data/daily');
+const files = (await readdir(dailyDir)).filter((file) => file.endsWith('.json')).sort();
+const snapshots = await Promise.all(files.map(async (file) => JSON.parse(await readFile(path.join(dailyDir, file), 'utf8'))));
+const latest = snapshots.at(-1) ?? null;
+
+await mkdir(path.join(root, 'docs/data'), { recursive: true });
+await writeFile(path.join(root, 'docs/data/index.json'), `${JSON.stringify({ snapshots }, null, 2)}\n`);
+
+const html = `<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ME News Skill Analytics</title><style>
+:root{color-scheme:dark;--bg:#08111f;--card:#101c2e;--line:#24344d;--text:#ecf3ff;--muted:#91a4c2;--accent:#57d3a0;--warn:#f5b95f}*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#07101c,#0c1830);color:var(--text);font:15px/1.5 system-ui,sans-serif}main{max-width:1180px;margin:auto;padding:40px 20px}h1{margin:0;font-size:32px}.subtitle{color:var(--muted);margin:6px 0 28px}.summary,.grid{display:grid;gap:14px}.summary{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin-bottom:20px}.grid{grid-template-columns:repeat(auto-fit,minmax(310px,1fr))}.card{background:rgba(16,28,46,.92);border:1px solid var(--line);border-radius:14px;padding:18px}.metric{font-size:28px;font-weight:750}.label,.meta{color:var(--muted);font-size:13px}.row{display:flex;justify-content:space-between;gap:15px;padding:9px 0;border-top:1px solid var(--line)}.row:first-of-type{border-top:0}.ok{color:var(--accent)}.warn{color:var(--warn)}a{color:#89bfff}footer{margin-top:28px;color:var(--muted);font-size:13px}</style></head>
+<body><main><h1>ME News Skill Analytics</h1><p class="subtitle">Skill 多平台发行数据 MVP · 每日快照</p><div id="app">加载中…</div><footer>安装量来自不同平台，不能直接视为独立用户数。</footer>
+<script>
+const n=v=>v==null?'—':new Intl.NumberFormat('en-US').format(v);
+fetch('./data/index.json').then(r=>r.json()).then(({snapshots})=>{const s=snapshots.at(-1);if(!s){app.textContent='暂无采集数据';return}const total=s.skills.reduce((a,x)=>a+(x.platforms.clawhub.metrics.downloads||0),0);const available=s.skills.filter(x=>x.platforms.skillsSh.status!=='unavailable').length;const gh=s.sharedPlatforms.github.metrics;app.innerHTML=
+\`<section class="summary"><div class="card"><div class="label">追踪 Skills</div><div class="metric">\${s.skills.length}</div></div><div class="card"><div class="label">ClawHub 下载合计</div><div class="metric">\${n(total)}</div></div><div class="card"><div class="label">GitHub Stars</div><div class="metric">\${n(gh.stars)}</div></div><div class="card"><div class="label">skills.sh 可用页面</div><div class="metric">\${available}/\${s.skills.length}</div></div></section><section class="grid">\`+
+s.skills.map(x=>{const c=x.platforms.clawhub,sh=x.platforms.skillsSh;return \`<article class="card"><h2>\${x.slug}</h2><div class="row"><span>ClawHub 下载</span><strong>\${n(c.metrics.downloads)}</strong></div><div class="row"><span>ClawHub 安装</span><strong>\${n(c.metrics.installs)}</strong></div><div class="row"><span>版本</span><strong>\${c.version||'—'}</strong></div><div class="row"><span>skills.sh</span><strong class="\${sh.status==='public-page-only'?'ok':'warn'}">\${sh.status}</strong></div></article>\`}).join('')+\`</section><p class="meta">最后采集：\${new Date(s.collectedAt).toLocaleString('zh-CN',{timeZone:s.timezone})}（\${s.timezone}） · 历史快照 \${snapshots.length} 天</p>\`;
+}).catch(e=>app.textContent='载入失败：'+e.message);
+</script></main></body></html>`;
+
+await writeFile(path.join(root, 'docs/index.html'), html);
+console.log(`Built dashboard from ${snapshots.length} snapshot(s); latest: ${latest?.date ?? 'none'}`);

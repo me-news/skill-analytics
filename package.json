@@ -1,0 +1,14 @@
+{
+  "name": "me-news-skill-analytics",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "collect": "node scripts/collect.mjs",
+    "build": "node scripts/build-dashboard.mjs",
+    "check": "node --check scripts/collect.mjs && node --check scripts/build-dashboard.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

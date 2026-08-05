@@ -1,0 +1,12 @@
+{
+  "timezone": "Asia/Hong_Kong",
+  "repository": "me-news/agent-skills",
+  "clawhubOwner": "jamesmenews",
+  "skills": [
+    { "slug": "ai-news-pro", "priority": 1 },
+    { "slug": "menews", "priority": 2 },
+    { "slug": "aimpact", "priority": 3 },
+    { "slug": "aimpact-crypto", "priority": 4 },
+    { "slug": "aimpact-prediction-market", "priority": 5 }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "collectedAt": "2026-08-05T02:45:53.624Z",
+  "date": "2026-08-05",
+  "timezone": "Asia/Hong_Kong",
+  "repository": "me-news/agent-skills",
+  "sharedPlatforms": {
+    "github": {
+      "status": "ok",
+      "url": "https://github.com/me-news/agent-skills",
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "openIssues": 0
+      },
+      "updatedAt": "2026-08-05T02:31:56Z",
+      "pushedAt": "2026-08-05T02:31:15Z"
+    }
+  },
+  "skills": [
+    {
+      "slug": "ai-news-pro",
+      "priority": 1,
+      "platforms": {
+        "clawhub": {
+          "status": "ok",
+          "url": "https://clawhub.ai/jamesmenews/ai-news-pro",
+          "version": "0.9.1",
+          "metrics": {
+            "downloads": 599,
+            "installs": 16,
+            "stars": 0,
+            "versions": 2,
+            "comments": 0
+          },
+          "updatedAt": "2026-05-11T09:43:51.819Z"
+        },
+        "skillsSh": {
+          "status": "unavailable",
+          "url": "https://skills.sh/me-news/agent-skills/ai-news-pro",
+          "httpStatus": 200,
+          "metrics": {},
+          "note": "Public page reports that the skill is unavailable."
+        }
+      }
+    },
+    {
+      "slug": "menews",
+      "priority": 2,
+      "platforms": {
+        "clawhub": {
+          "status": "ok",
+          "url": "https://clawhub.ai/jamesmenews/menews",
+          "version": "1.0.11",
+          "metrics": {
+            "downloads": 1234,
+            "installs": 36,
+            "stars": 0,
+            "versions": 12,
+            "comments": 0
+          },
+          "updatedAt": "2026-05-11T09:30:16.516Z"
+        },
+        "skillsSh": {
+          "status": "unavailable",
+          "url": "https://skills.sh/me-news/agent-skills/menews",
+          "httpStatus": 200,
+          "metrics": {},
+          "note": "Public page reports that the skill is unavailable."
+        }
+      }
+    },
+    {
+      "slug": "aimpact",
+      "priority": 3,
+      "platforms": {
+        "clawhub": {
+          "status": "ok",
+          "url": "https://clawhub.ai/jamesmenews/aimpact",
+          "version": "0.8.1",
+          "metrics": {
+            "downloads": 593,
+            "installs": 16,
+            "stars": 0,
+            "versions": 2,
+            "comments": 0
+          },
+          "updatedAt": "2026-05-11T09:43:48.979Z"
+        },
+        "skillsSh": {
+          "status": "unavailable",
+          "url": "https://skills.sh/me-news/agent-skills/aimpact",
+          "httpStatus": 200,
+          "metrics": {},
+          "note": "Public page reports that the skill is unavailable."
+        }
+      }
+    },
+    {
+      "slug": "aimpact-crypto",
+      "priority": 4,
+      "platforms": {
+        "clawhub": {
+          "status": "ok",
+          "url": "https://clawhub.ai/jamesmenews/aimpact-crypto",
+          "version": "0.8.1",
+          "metrics": {
+            "downloads": 603,
+            "installs": 16,
+            "stars": 0,
+            "versions": 2,
+            "comments": 0
+          },
+          "updatedAt": "2026-05-11T09:43:48.979Z"
+        },
+        "skillsSh": {
+          "status": "unavailable",
+          "url": "https://skills.sh/me-news/agent-skills/aimpact-crypto",
+          "httpStatus": 200,
+          "metrics": {},
+          "note": "Public page reports that the skill is unavailable."
+        }
+      }
+    },
+    {
+      "slug": "aimpact-prediction-market",
+      "priority": 5,
+      "platforms": {
+        "clawhub": {
+          "status": "ok",
+          "url": "https://clawhub.ai/jamesmenews/aimpact-prediction-market",
+          "version": "1.0.1",
+          "metrics": {
+            "downloads": 592,
+            "installs": 16,
+            "stars": 0,
+            "versions": 2,
+            "comments": 0
+          },
+          "updatedAt": "2026-05-11T09:43:48.979Z"
+        },
+        "skillsSh": {
+          "status": "unavailable",
+          "url": "https://skills.sh/me-news/agent-skills/aimpact-prediction-market",
+          "httpStatus": 200,
+          "metrics": {},
+          "note": "Public page reports that the skill is unavailable."
+        }
+      }
+    }
+  ]
+}
