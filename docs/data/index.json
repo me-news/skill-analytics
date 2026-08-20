@@ -4295,16 +4295,22 @@
     },
     {
       "schemaVersion": 5,
-      "collectedAt": "2026-08-20T11:02:10.668Z",
+      "collectedAt": "2026-08-20T11:03:55.666Z",
       "date": "2026-08-20",
       "timezone": "Asia/Hong_Kong",
       "repository": "me-news/agent-skills",
       "sharedPlatforms": {
         "github": {
-          "status": "error",
-          "url": "https://api.github.com/repos/me-news/agent-skills",
-          "error": "HTTP 403 rate limit exceeded",
-          "metrics": {}
+          "status": "ok",
+          "url": "https://github.com/me-news/agent-skills",
+          "metrics": {
+            "stars": 1,
+            "forks": 0,
+            "watchers": 0,
+            "openIssues": 0
+          },
+          "updatedAt": "2026-08-20T07:23:46Z",
+          "pushedAt": "2026-08-20T07:22:39Z"
         }
       },
       "clawhubSkills": [
