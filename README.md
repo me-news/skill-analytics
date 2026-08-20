@@ -4,7 +4,7 @@ GitHub Actions-only MVP for collecting and reviewing the distribution metrics of
 
 ## Scope
 
-- Five published skills from the `jamesmenews` ClawHub account
+- Six published skills across the `jamesmenews` and `me-news` ClawHub accounts
 - ClawHub downloads, installs, stars, comments, and version metrics
 - GitHub repository metrics
 - skills.sh public install metrics for two specified listings

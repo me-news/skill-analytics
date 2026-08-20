@@ -28,13 +28,34 @@ async function getJson(url, headers = {}, attempts = 3) {
   throw lastError;
 }
 
+async function getResponse(url, options = {}, attempts = 3) {
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const response = await fetch(url, {
+        ...options,
+        headers: { 'User-Agent': 'me-news-skill-analytics/0.1', ...options.headers },
+        signal: AbortSignal.timeout(20_000)
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status} ${response.statusText}`);
+      return response;
+    } catch (error) {
+      lastError = error;
+      if (attempt < attempts) await new Promise((resolve) => setTimeout(resolve, attempt * 1_000));
+    }
+  }
+  throw lastError;
+}
+
 async function collectClawHub(skill) {
-  const url = `https://clawhub.ai/api/v1/skills/${skill.slug}`;
+  const owner = skill.clawhubOwner ?? config.clawhubOwner;
+  const pageUrl = `https://clawhub.ai/${owner}/skills/${skill.slug}`;
+  const url = `https://clawhub.ai/api/v1/skills/${skill.slug}?ownerHandle=${encodeURIComponent(owner)}`;
   try {
     const payload = await getJson(url);
     const item = payload.skill;
     return {
-      status: 'ok', url: `https://clawhub.ai/${config.clawhubOwner}/${skill.slug}`,
+      status: 'ok', url: pageUrl,
       version: payload.latestVersion?.version ?? item.tags?.latest ?? null,
       metrics: {
         downloads: item.stats?.downloads ?? null,
@@ -46,7 +67,7 @@ async function collectClawHub(skill) {
       updatedAt: item.updatedAt ? new Date(item.updatedAt).toISOString() : null
     };
   } catch (error) {
-    return { status: 'error', url, error: error.message, metrics: {} };
+    return { status: 'error', url: pageUrl, apiUrl: url, error: error.message, metrics: {} };
   }
 }
 
@@ -87,12 +108,8 @@ async function collectSkillsSh(listing) {
 async function collectAskill(skill) {
   const url = `${config.askillBaseUrl}/@${skill.slug}`;
   try {
-    const response = await fetch(url, {
-      headers: { 'User-Agent': 'me-news-skill-analytics/0.1' },
-      redirect: 'follow', signal: AbortSignal.timeout(20_000)
-    });
+    const response = await getResponse(url, { redirect: 'follow' });
     const body = await response.text();
-    if (!response.ok) throw new Error(`HTTP ${response.status} ${response.statusText}`);
     const downloadsLabel = body.match(/>([\d.,]+[kKmM]?) downloads<\/span>/i)?.[1] ?? null;
     const starsLabel = body.match(/>([\d,]+)(?:<!-- -->)? stars<\/span>/i)?.[1] ?? null;
     return {
@@ -139,8 +156,9 @@ async function collectAgentSkill(skill) {
 }
 
 async function collectSkillHub(skill) {
-  const pageUrl = `${config.skillHubBaseUrl}/${skill.slug}`;
-  const apiUrl = `https://api.skillhub.cn/api/v1/skills/${encodeURIComponent(skill.slug)}?namespace=${encodeURIComponent(config.skillHubNamespace)}`;
+  const namespace = skill.skillHubNamespace ?? config.skillHubNamespace;
+  const pageUrl = `https://skillhub.cloud.tencent.com/skills/${encodeURIComponent(namespace)}/${skill.slug}`;
+  const apiUrl = `https://api.skillhub.cn/api/v1/skills/${encodeURIComponent(skill.slug)}?namespace=${encodeURIComponent(namespace)}`;
   try {
     const payload = await getJson(apiUrl);
     const item = payload.skill;
@@ -169,6 +187,15 @@ async function collectSkillHub(skill) {
       note: 'SkillHub metrics are stored separately and are not added to other platforms.'
     };
   } catch (error) {
+    if (/HTTP 404\b/.test(error.message)) {
+      return {
+        status: 'pending-index',
+        url: pageUrl,
+        apiUrl,
+        error: 'SkillHub has not indexed this skill yet.',
+        metrics: {}
+      };
+    }
     return { status: 'error', url: pageUrl, apiUrl, error: error.message, metrics: {} };
   }
 }
@@ -255,4 +282,6 @@ await writeFile(path.join(root, 'data/latest.json'), `${JSON.stringify(snapshot,
 const failures = [github, ...clawhubSkills.map((skill) => skill.data), ...skillsShListings.map((listing) => listing.data), ...askillSkills.map((skill) => skill.data), ...agentSkillListings.map((skill) => skill.data), ...skillHubListings.map((skill) => skill.data)]
   .filter((platform) => platform.status === 'error');
 console.log(`Collected ${clawhubSkills.length} ClawHub, ${skillsShListings.length} skills.sh, ${askillSkills.length} askill.sh, ${agentSkillListings.length} agentskill.sh, and ${skillHubListings.length} SkillHub listings at ${collectedAt}; hard failures: ${failures.length}`);
-if (failures.length) process.exitCode = 1;
+if (failures.length) {
+  console.warn(`Collection completed with ${failures.length} platform error(s); the snapshot was retained for observability.`);
+}

@@ -11,7 +11,13 @@
     { "slug": "menews", "priority": 2 },
     { "slug": "aimpact", "priority": 3 },
     { "slug": "aimpact-crypto", "priority": 4 },
-    { "slug": "aimpact-prediction-market", "priority": 5 }
+    { "slug": "aimpact-prediction-market", "priority": 5 },
+    {
+      "slug": "me-featured-events",
+      "priority": 6,
+      "clawhubOwner": "me-news",
+      "skillHubNamespace": "me-news"
+    }
   ],
   "skillsShListings": [
     {
@@ -23,6 +29,11 @@
       "id": "ai-news-github",
       "name": "ai-news",
       "url": "https://www.skills.sh/jamesmenews/ai-news/ai-news"
+    },
+    {
+      "id": "me-featured-events-github",
+      "name": "me-featured-events",
+      "url": "https://www.skills.sh/me-news/agent-skills/me-featured-events"
     }
   ]
 }
