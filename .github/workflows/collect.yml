@@ -3,7 +3,7 @@ name: Collect skill metrics
 on:
   workflow_dispatch:
   schedule:
-    - cron: "15 1 * * *"
+    - cron: "15 1,13 * * *"
 
 permissions:
   contents: write

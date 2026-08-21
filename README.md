@@ -34,7 +34,7 @@ Use `GITHUB_TOKEN` when available to avoid the low anonymous GitHub API rate lim
 
 ## Automation
 
-`collect.yml` runs daily at 01:15 UTC (09:15 Asia/Hong_Kong), commits the daily snapshot, and rebuilds the dashboard. GitHub scheduled workflows can be delayed during periods of high load.
+`collect.yml` runs twice daily at 01:15 and 13:15 UTC (09:15 and 21:15 Asia/Hong_Kong), updates the current day's snapshot, and rebuilds the dashboard. GitHub scheduled workflows can be delayed during periods of high load.
 
 `pages.yml` publishes `docs/` when the dashboard changes and can also be run manually. GitHub Pages must use **GitHub Actions** as its source.
 
