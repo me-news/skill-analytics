@@ -157,7 +157,7 @@ async function collectAgentSkill(skill) {
 
 async function collectSkillHub(skill) {
   const namespace = skill.skillHubNamespace ?? config.skillHubNamespace;
-  const pageUrl = `https://skillhub.cloud.tencent.com/skills/${encodeURIComponent(namespace)}/${skill.slug}`;
+  const pageUrl = `${config.skillHubBaseUrl}/${encodeURIComponent(namespace)}/${encodeURIComponent(skill.slug)}`;
   const apiUrl = `https://api.skillhub.cn/api/v1/skills/${encodeURIComponent(skill.slug)}?namespace=${encodeURIComponent(namespace)}`;
   try {
     const payload = await getJson(apiUrl);
