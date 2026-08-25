@@ -6965,7 +6965,7 @@
     },
     {
       "schemaVersion": 5,
-      "collectedAt": "2026-08-25T03:58:02.988Z",
+      "collectedAt": "2026-08-25T15:29:05.130Z",
       "date": "2026-08-25",
       "timezone": "Asia/Hong_Kong",
       "repository": "me-news/agent-skills",
@@ -6992,7 +6992,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/ai-news-pro",
             "version": "0.9.1",
             "metrics": {
-              "downloads": 664,
+              "downloads": 665,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -7009,7 +7009,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/menews",
             "version": "1.0.11",
             "metrics": {
-              "downloads": 1358,
+              "downloads": 1368,
               "installs": 36,
               "stars": 0,
               "versions": 12,
@@ -7077,7 +7077,7 @@
             "url": "https://clawhub.ai/me-news/skills/me-featured-events",
             "version": "1.1.0",
             "metrics": {
-              "downloads": 87,
+              "downloads": 90,
               "installs": 0,
               "stars": 0,
               "versions": 1,
@@ -7495,7 +7495,7 @@
             "version": "1.0.1",
             "source": "clawhub",
             "metrics": {
-              "downloads": 646,
+              "downloads": 647,
               "installs": 16,
               "stars": 0,
               "versions": 1,
@@ -7509,7 +7509,7 @@
             "claimable": true,
             "verified": false,
             "contentZhAvailable": false,
-            "updatedAt": "2026-08-25T03:04:58.252Z",
+            "updatedAt": "2026-08-25T07:32:57.103Z",
             "note": "SkillHub metrics are stored separately and are not added to other platforms."
           }
         },
