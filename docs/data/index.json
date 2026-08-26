@@ -7528,7 +7528,7 @@
     },
     {
       "schemaVersion": 5,
-      "collectedAt": "2026-08-26T04:05:27.230Z",
+      "collectedAt": "2026-08-26T16:37:56.033Z",
       "date": "2026-08-26",
       "timezone": "Asia/Hong_Kong",
       "repository": "me-news/agent-skills",
@@ -7555,7 +7555,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/ai-news-pro",
             "version": "0.9.1",
             "metrics": {
-              "downloads": 667,
+              "downloads": 668,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -7572,7 +7572,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/menews",
             "version": "1.0.11",
             "metrics": {
-              "downloads": 1370,
+              "downloads": 1371,
               "installs": 36,
               "stars": 0,
               "versions": 12,
@@ -7589,7 +7589,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/aimpact",
             "version": "0.8.1",
             "metrics": {
-              "downloads": 655,
+              "downloads": 656,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -7606,7 +7606,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/aimpact-crypto",
             "version": "0.8.1",
             "metrics": {
-              "downloads": 664,
+              "downloads": 665,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -7623,7 +7623,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/aimpact-prediction-market",
             "version": "1.0.1",
             "metrics": {
-              "downloads": 653,
+              "downloads": 654,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -7640,7 +7640,7 @@
             "url": "https://clawhub.ai/me-news/skills/me-featured-events",
             "version": "1.1.0",
             "metrics": {
-              "downloads": 90,
+              "downloads": 92,
               "installs": 0,
               "stars": 0,
               "versions": 1,
