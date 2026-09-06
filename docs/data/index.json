@@ -13038,7 +13038,7 @@
     },
     {
       "schemaVersion": 5,
-      "collectedAt": "2026-09-06T05:57:34.826Z",
+      "collectedAt": "2026-09-06T16:17:30.463Z",
       "date": "2026-09-06",
       "timezone": "Asia/Hong_Kong",
       "repository": "me-news/agent-skills",
@@ -13065,7 +13065,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/ai-news-pro",
             "version": "0.9.1",
             "metrics": {
-              "downloads": 707,
+              "downloads": 708,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -13082,7 +13082,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/menews",
             "version": "1.0.11",
             "metrics": {
-              "downloads": 1427,
+              "downloads": 1430,
               "installs": 36,
               "stars": 0,
               "versions": 12,
@@ -13099,7 +13099,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/aimpact",
             "version": "0.8.1",
             "metrics": {
-              "downloads": 683,
+              "downloads": 684,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -13116,7 +13116,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/aimpact-crypto",
             "version": "0.8.1",
             "metrics": {
-              "downloads": 692,
+              "downloads": 693,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -13133,7 +13133,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/aimpact-prediction-market",
             "version": "1.0.1",
             "metrics": {
-              "downloads": 681,
+              "downloads": 682,
               "installs": 16,
               "stars": 0,
               "versions": 2,
