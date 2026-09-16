@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "collectedAt": "2026-09-16T06:01:51.767Z",
+  "collectedAt": "2026-09-16T17:37:34.530Z",
   "date": "2026-09-16",
   "timezone": "Asia/Hong_Kong",
   "repository": "me-news/agent-skills",
@@ -44,7 +44,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/menews",
         "version": "1.0.11",
         "metrics": {
-          "downloads": 1470,
+          "downloads": 1472,
           "installs": 36,
           "stars": 0,
           "versions": 12,
@@ -112,7 +112,7 @@
         "url": "https://clawhub.ai/me-news/skills/me-featured-events",
         "version": "1.1.0",
         "metrics": {
-          "downloads": 191,
+          "downloads": 192,
           "installs": 0,
           "stars": 0,
           "versions": 1,
