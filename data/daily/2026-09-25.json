@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "collectedAt": "2026-09-25T06:09:56.296Z",
+  "collectedAt": "2026-09-25T17:57:07.857Z",
   "date": "2026-09-25",
   "timezone": "Asia/Hong_Kong",
   "repository": "me-news/agent-skills",
@@ -27,7 +27,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/ai-news-pro",
         "version": "0.9.1",
         "metrics": {
-          "downloads": 761,
+          "downloads": 762,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -44,7 +44,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/menews",
         "version": "1.0.11",
         "metrics": {
-          "downloads": 1521,
+          "downloads": 1523,
           "installs": 36,
           "stars": 0,
           "versions": 12,
@@ -95,7 +95,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/aimpact-prediction-market",
         "version": "1.0.1",
         "metrics": {
-          "downloads": 723,
+          "downloads": 724,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -112,7 +112,7 @@
         "url": "https://clawhub.ai/me-news/skills/me-featured-events",
         "version": "1.1.0",
         "metrics": {
-          "downloads": 228,
+          "downloads": 229,
           "installs": 0,
           "stars": 0,
           "versions": 1,
@@ -412,65 +412,150 @@
       "slug": "ai-news-pro",
       "priority": 1,
       "data": {
-        "status": "error",
+        "status": "ok",
         "url": "https://skillhub.cloud.tencent.com/skills/clawhub_jamesmenews/ai-news-pro",
         "apiUrl": "https://api.skillhub.cn/api/v1/skills/ai-news-pro?namespace=clawhub_jamesmenews",
-        "error": "fetch failed",
-        "metrics": {}
+        "version": "0.9.1",
+        "source": "clawhub",
+        "metrics": {
+          "downloads": 707,
+          "installs": 16,
+          "stars": 0,
+          "versions": 1,
+          "comments": 0
+        },
+        "security": {
+          "keen": "benign",
+          "sanbu": "benign"
+        },
+        "claimState": "unclaimed",
+        "claimable": true,
+        "verified": false,
+        "contentZhAvailable": false,
+        "updatedAt": "2026-09-25T17:37:44.245Z",
+        "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
     {
       "slug": "menews",
       "priority": 2,
       "data": {
-        "status": "error",
+        "status": "ok",
         "url": "https://skillhub.cloud.tencent.com/skills/clawhub_jamesmenews/menews",
         "apiUrl": "https://api.skillhub.cn/api/v1/skills/menews?namespace=clawhub_jamesmenews",
-        "error": "fetch failed",
-        "metrics": {}
+        "version": "1.0.11",
+        "source": "clawhub",
+        "metrics": {
+          "downloads": 1396,
+          "installs": 36,
+          "stars": 0,
+          "versions": 3,
+          "comments": 0
+        },
+        "security": {
+          "keen": "benign",
+          "sanbu": "benign"
+        },
+        "claimState": "unclaimed",
+        "claimable": true,
+        "verified": false,
+        "contentZhAvailable": false,
+        "updatedAt": "2026-09-25T17:24:46.123Z",
+        "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
     {
       "slug": "aimpact",
       "priority": 3,
       "data": {
-        "status": "error",
+        "status": "ok",
         "url": "https://skillhub.cloud.tencent.com/skills/clawhub_jamesmenews/aimpact",
         "apiUrl": "https://api.skillhub.cn/api/v1/skills/aimpact?namespace=clawhub_jamesmenews",
-        "error": "fetch failed",
-        "metrics": {}
+        "version": "0.8.1",
+        "source": "clawhub",
+        "metrics": {
+          "downloads": 687,
+          "installs": 16,
+          "stars": 0,
+          "versions": 1,
+          "comments": 0
+        },
+        "security": {
+          "keen": "benign",
+          "sanbu": "benign"
+        },
+        "claimState": "unclaimed",
+        "claimable": true,
+        "verified": false,
+        "contentZhAvailable": false,
+        "updatedAt": "2026-09-25T17:38:08.201Z",
+        "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
     {
       "slug": "aimpact-crypto",
       "priority": 4,
       "data": {
-        "status": "error",
+        "status": "ok",
         "url": "https://skillhub.cloud.tencent.com/skills/clawhub_jamesmenews/aimpact-crypto",
         "apiUrl": "https://api.skillhub.cn/api/v1/skills/aimpact-crypto?namespace=clawhub_jamesmenews",
-        "error": "fetch failed",
-        "metrics": {}
+        "version": "0.8.1",
+        "source": "clawhub",
+        "metrics": {
+          "downloads": 719,
+          "installs": 16,
+          "stars": 0,
+          "versions": 1,
+          "comments": 0
+        },
+        "security": {
+          "keen": "benign",
+          "sanbu": "benign"
+        },
+        "claimState": "unclaimed",
+        "claimable": false,
+        "verified": false,
+        "contentZhAvailable": false,
+        "updatedAt": "2026-09-25T17:37:56.963Z",
+        "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
     {
       "slug": "aimpact-prediction-market",
       "priority": 5,
       "data": {
-        "status": "error",
+        "status": "ok",
         "url": "https://skillhub.cloud.tencent.com/skills/clawhub_jamesmenews/aimpact-prediction-market",
         "apiUrl": "https://api.skillhub.cn/api/v1/skills/aimpact-prediction-market?namespace=clawhub_jamesmenews",
-        "error": "fetch failed",
-        "metrics": {}
+        "version": "1.0.1",
+        "source": "clawhub",
+        "metrics": {
+          "downloads": 696,
+          "installs": 16,
+          "stars": 0,
+          "versions": 1,
+          "comments": 0
+        },
+        "security": {
+          "keen": "benign",
+          "sanbu": "benign"
+        },
+        "claimState": "unclaimed",
+        "claimable": true,
+        "verified": false,
+        "contentZhAvailable": false,
+        "updatedAt": "2026-09-25T17:37:51.151Z",
+        "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
     {
       "slug": "me-featured-events",
       "priority": 6,
       "data": {
-        "status": "error",
+        "status": "pending-index",
         "url": "https://skillhub.cloud.tencent.com/skills/clawhub_me-news/me-featured-events",
         "apiUrl": "https://api.skillhub.cn/api/v1/skills/me-featured-events?namespace=clawhub_me-news",
-        "error": "fetch failed",
+        "error": "SkillHub has not indexed this skill yet.",
         "metrics": {}
       }
     }
