@@ -26490,7 +26490,7 @@
     },
     {
       "schemaVersion": 5,
-      "collectedAt": "2026-09-30T06:43:06.839Z",
+      "collectedAt": "2026-09-30T18:26:33.039Z",
       "date": "2026-09-30",
       "timezone": "Asia/Hong_Kong",
       "repository": "me-news/agent-skills",
@@ -26534,7 +26534,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/menews",
             "version": "1.0.11",
             "metrics": {
-              "downloads": 1548,
+              "downloads": 1549,
               "installs": 36,
               "stars": 0,
               "versions": 12,
@@ -26774,21 +26774,11 @@
           "slug": "ai-news-pro",
           "priority": 1,
           "data": {
-            "status": "ok",
+            "status": "error",
             "url": "https://agentskill.sh/@me-news/ai-news-pro",
             "apiUrl": "https://agentskill.sh/api/skills/me-news%2Fai-news-pro",
-            "metrics": {
-              "installs": 0,
-              "installs24h": 0,
-              "installs3d": 0,
-              "installs7d": 0,
-              "securityScore": 95,
-              "qualityScore": 0,
-              "githubStars": 1,
-              "ratingCount": 0
-            },
-            "verified": false,
-            "lastCrawledAt": "2026-08-20T10:57:54.283Z"
+            "error": "The operation was aborted due to timeout",
+            "metrics": {}
           }
         },
         {
@@ -26879,21 +26869,11 @@
           "slug": "me-featured-events",
           "priority": 6,
           "data": {
-            "status": "ok",
+            "status": "error",
             "url": "https://agentskill.sh/@me-news/me-featured-events",
             "apiUrl": "https://agentskill.sh/api/skills/me-news%2Fme-featured-events",
-            "metrics": {
-              "installs": 0,
-              "installs24h": 0,
-              "installs3d": 0,
-              "installs7d": 0,
-              "securityScore": 100,
-              "qualityScore": 0,
-              "githubStars": 1,
-              "ratingCount": 0
-            },
-            "verified": false,
-            "lastCrawledAt": "2026-08-20T10:58:12.536Z"
+            "error": "HTTP 500 Internal Server Error",
+            "metrics": {}
           }
         }
       ],
@@ -26908,7 +26888,7 @@
             "version": "0.9.1",
             "source": "clawhub",
             "metrics": {
-              "downloads": 723,
+              "downloads": 725,
               "installs": 16,
               "stars": 0,
               "versions": 1,
@@ -26922,7 +26902,7 @@
             "claimable": true,
             "verified": false,
             "contentZhAvailable": false,
-            "updatedAt": "2026-09-29T10:45:32.944Z",
+            "updatedAt": "2026-09-30T07:53:47.136Z",
             "note": "SkillHub metrics are stored separately and are not added to other platforms."
           }
         },
@@ -26936,7 +26916,7 @@
             "version": "1.0.11",
             "source": "clawhub",
             "metrics": {
-              "downloads": 1418,
+              "downloads": 1420,
               "installs": 36,
               "stars": 0,
               "versions": 3,
@@ -26950,7 +26930,7 @@
             "claimable": true,
             "verified": false,
             "contentZhAvailable": false,
-            "updatedAt": "2026-09-29T21:40:55.043Z",
+            "updatedAt": "2026-09-30T10:10:50.620Z",
             "note": "SkillHub metrics are stored separately and are not added to other platforms."
           }
         },
@@ -26964,7 +26944,7 @@
             "version": "0.8.1",
             "source": "clawhub",
             "metrics": {
-              "downloads": 691,
+              "downloads": 693,
               "installs": 16,
               "stars": 0,
               "versions": 1,
@@ -26978,7 +26958,7 @@
             "claimable": true,
             "verified": false,
             "contentZhAvailable": false,
-            "updatedAt": "2026-09-29T04:55:32.798Z",
+            "updatedAt": "2026-09-30T10:05:52.097Z",
             "note": "SkillHub metrics are stored separately and are not added to other platforms."
           }
         },
@@ -26992,7 +26972,7 @@
             "version": "0.8.1",
             "source": "clawhub",
             "metrics": {
-              "downloads": 731,
+              "downloads": 734,
               "installs": 16,
               "stars": 0,
               "versions": 1,
@@ -27006,7 +26986,7 @@
             "claimable": false,
             "verified": false,
             "contentZhAvailable": false,
-            "updatedAt": "2026-09-29T14:51:37.797Z",
+            "updatedAt": "2026-09-30T09:55:49.106Z",
             "note": "SkillHub metrics are stored separately and are not added to other platforms."
           }
         },
@@ -27020,7 +27000,7 @@
             "version": "1.0.1",
             "source": "clawhub",
             "metrics": {
-              "downloads": 710,
+              "downloads": 711,
               "installs": 16,
               "stars": 0,
               "versions": 1,
@@ -27034,7 +27014,7 @@
             "claimable": true,
             "verified": false,
             "contentZhAvailable": false,
-            "updatedAt": "2026-09-29T04:33:36.562Z",
+            "updatedAt": "2026-09-30T08:46:49.234Z",
             "note": "SkillHub metrics are stored separately and are not added to other platforms."
           }
         },
