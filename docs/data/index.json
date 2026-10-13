@@ -33606,7 +33606,7 @@
     },
     {
       "schemaVersion": 5,
-      "collectedAt": "2026-10-13T07:42:11.486Z",
+      "collectedAt": "2026-10-13T19:51:57.352Z",
       "date": "2026-10-13",
       "timezone": "Asia/Hong_Kong",
       "repository": "me-news/agent-skills",
@@ -33633,7 +33633,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/ai-news-pro",
             "version": "0.9.1",
             "metrics": {
-              "downloads": 815,
+              "downloads": 816,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -33650,7 +33650,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/menews",
             "version": "1.0.11",
             "metrics": {
-              "downloads": 1621,
+              "downloads": 1623,
               "installs": 36,
               "stars": 0,
               "versions": 12,
@@ -33733,12 +33733,21 @@
           "id": "menews-volces",
           "name": "menews",
           "data": {
-            "status": "unavailable",
+            "status": "ok",
             "url": "https://www.skills.sh/site/skills.volces.com/menews",
-            "httpStatus": 500,
+            "httpStatus": 200,
             "metrics": {
-              "installs": null,
-              "weeklyInstalls": null
+              "installs": 2,
+              "weeklyInstalls": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
             },
             "note": "Metrics parsed from public HTML; use the authenticated API when available."
           }
@@ -34015,7 +34024,7 @@
             "version": "0.9.1",
             "source": "clawhub",
             "metrics": {
-              "downloads": 753,
+              "downloads": 754,
               "installs": 16,
               "stars": 0,
               "versions": 1,
@@ -34029,7 +34038,7 @@
             "claimable": true,
             "verified": false,
             "contentZhAvailable": false,
-            "updatedAt": "2026-10-13T02:40:45.661Z",
+            "updatedAt": "2026-10-13T09:49:17.621Z",
             "note": "SkillHub metrics are stored separately and are not added to other platforms."
           }
         },
@@ -34043,7 +34052,7 @@
             "version": "1.0.11",
             "source": "clawhub",
             "metrics": {
-              "downloads": 1484,
+              "downloads": 1485,
               "installs": 36,
               "stars": 0,
               "versions": 3,
@@ -34057,7 +34066,7 @@
             "claimable": true,
             "verified": false,
             "contentZhAvailable": false,
-            "updatedAt": "2026-10-12T22:50:52.971Z",
+            "updatedAt": "2026-10-13T09:49:54.580Z",
             "note": "SkillHub metrics are stored separately and are not added to other platforms."
           }
         },
@@ -34071,7 +34080,7 @@
             "version": "0.8.1",
             "source": "clawhub",
             "metrics": {
-              "downloads": 711,
+              "downloads": 712,
               "installs": 16,
               "stars": 0,
               "versions": 1,
@@ -34085,7 +34094,7 @@
             "claimable": true,
             "verified": false,
             "contentZhAvailable": false,
-            "updatedAt": "2026-10-13T03:02:40.911Z",
+            "updatedAt": "2026-10-13T09:48:58.271Z",
             "note": "SkillHub metrics are stored separately and are not added to other platforms."
           }
         },
@@ -34099,7 +34108,7 @@
             "version": "0.8.1",
             "source": "clawhub",
             "metrics": {
-              "downloads": 754,
+              "downloads": 755,
               "installs": 16,
               "stars": 0,
               "versions": 1,
@@ -34113,7 +34122,7 @@
             "claimable": false,
             "verified": false,
             "contentZhAvailable": false,
-            "updatedAt": "2026-10-13T03:30:05.694Z",
+            "updatedAt": "2026-10-13T10:12:40.859Z",
             "note": "SkillHub metrics are stored separately and are not added to other platforms."
           }
         },
