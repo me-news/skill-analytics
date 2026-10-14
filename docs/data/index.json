@@ -34169,7 +34169,7 @@
     },
     {
       "schemaVersion": 5,
-      "collectedAt": "2026-10-14T06:09:01.730Z",
+      "collectedAt": "2026-10-14T18:00:53.021Z",
       "date": "2026-10-14",
       "timezone": "Asia/Hong_Kong",
       "repository": "me-news/agent-skills",
@@ -34196,7 +34196,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/ai-news-pro",
             "version": "0.9.1",
             "metrics": {
-              "downloads": 817,
+              "downloads": 818,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -34213,7 +34213,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/menews",
             "version": "1.0.11",
             "metrics": {
-              "downloads": 1624,
+              "downloads": 1626,
               "installs": 36,
               "stars": 0,
               "versions": 12,
@@ -34230,7 +34230,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/aimpact",
             "version": "0.8.1",
             "metrics": {
-              "downloads": 774,
+              "downloads": 775,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -34247,7 +34247,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/aimpact-crypto",
             "version": "0.8.1",
             "metrics": {
-              "downloads": 785,
+              "downloads": 786,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -34264,7 +34264,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/aimpact-prediction-market",
             "version": "1.0.1",
             "metrics": {
-              "downloads": 775,
+              "downloads": 777,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -34281,7 +34281,7 @@
             "url": "https://clawhub.ai/me-news/skills/me-featured-events",
             "version": "1.1.0",
             "metrics": {
-              "downloads": 307,
+              "downloads": 311,
               "installs": 0,
               "stars": 0,
               "versions": 1,
@@ -34456,7 +34456,7 @@
             "status": "error",
             "url": "https://agentskill.sh/@me-news/ai-news-pro",
             "apiUrl": "https://agentskill.sh/api/skills/me-news%2Fai-news-pro",
-            "error": "HTTP 500 Internal Server Error",
+            "error": "The operation was aborted due to timeout",
             "metrics": {}
           }
         },
@@ -34467,7 +34467,7 @@
             "status": "error",
             "url": "https://agentskill.sh/@me-news/menews",
             "apiUrl": "https://agentskill.sh/api/skills/me-news%2Fmenews",
-            "error": "HTTP 500 Internal Server Error",
+            "error": "The operation was aborted due to timeout",
             "metrics": {}
           }
         },
@@ -34478,7 +34478,7 @@
             "status": "error",
             "url": "https://agentskill.sh/@me-news/aimpact",
             "apiUrl": "https://agentskill.sh/api/skills/me-news%2Faimpact",
-            "error": "HTTP 500 Internal Server Error",
+            "error": "The operation was aborted due to timeout",
             "metrics": {}
           }
         },
@@ -34489,7 +34489,7 @@
             "status": "error",
             "url": "https://agentskill.sh/@me-news/aimpact-crypto",
             "apiUrl": "https://agentskill.sh/api/skills/me-news%2Faimpact-crypto",
-            "error": "HTTP 500 Internal Server Error",
+            "error": "The operation was aborted due to timeout",
             "metrics": {}
           }
         },
@@ -34500,7 +34500,7 @@
             "status": "error",
             "url": "https://agentskill.sh/@me-news/aimpact-prediction-market",
             "apiUrl": "https://agentskill.sh/api/skills/me-news%2Faimpact-prediction-market",
-            "error": "HTTP 500 Internal Server Error",
+            "error": "The operation was aborted due to timeout",
             "metrics": {}
           }
         },
@@ -34511,7 +34511,7 @@
             "status": "error",
             "url": "https://agentskill.sh/@me-news/me-featured-events",
             "apiUrl": "https://agentskill.sh/api/skills/me-news%2Fme-featured-events",
-            "error": "HTTP 500 Internal Server Error",
+            "error": "The operation was aborted due to timeout",
             "metrics": {}
           }
         }
