@@ -35748,7 +35748,7 @@
     },
     {
       "schemaVersion": 5,
-      "collectedAt": "2026-10-17T05:36:03.882Z",
+      "collectedAt": "2026-10-17T16:24:35.111Z",
       "date": "2026-10-17",
       "timezone": "Asia/Hong_Kong",
       "repository": "me-news/agent-skills",
@@ -35775,7 +35775,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/ai-news-pro",
             "version": "0.9.1",
             "metrics": {
-              "downloads": 826,
+              "downloads": 827,
               "installs": 16,
               "stars": 0,
               "versions": 2,
@@ -35792,7 +35792,7 @@
             "url": "https://clawhub.ai/jamesmenews/skills/menews",
             "version": "1.0.11",
             "metrics": {
-              "downloads": 1642,
+              "downloads": 1646,
               "installs": 36,
               "stars": 0,
               "versions": 12,
