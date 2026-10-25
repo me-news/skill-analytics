@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
-  "collectedAt": "2026-10-24T16:34:56.871Z",
-  "date": "2026-10-24",
+  "collectedAt": "2026-10-25T06:07:46.154Z",
+  "date": "2026-10-25",
   "timezone": "Asia/Hong_Kong",
   "repository": "me-news/agent-skills",
   "sharedPlatforms": {
@@ -27,7 +27,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/ai-news-pro",
         "version": "0.9.1",
         "metrics": {
-          "downloads": 849,
+          "downloads": 851,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -44,7 +44,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/menews",
         "version": "1.0.11",
         "metrics": {
-          "downloads": 1681,
+          "downloads": 1686,
           "installs": 36,
           "stars": 0,
           "versions": 12,
@@ -61,7 +61,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/aimpact",
         "version": "0.8.1",
         "metrics": {
-          "downloads": 800,
+          "downloads": 802,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -78,7 +78,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/aimpact-crypto",
         "version": "0.8.1",
         "metrics": {
-          "downloads": 810,
+          "downloads": 812,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -95,7 +95,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/aimpact-prediction-market",
         "version": "1.0.1",
         "metrics": {
-          "downloads": 800,
+          "downloads": 802,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -112,7 +112,7 @@
         "url": "https://clawhub.ai/me-news/skills/me-featured-events",
         "version": "1.1.0",
         "metrics": {
-          "downloads": 355,
+          "downloads": 361,
           "installs": 0,
           "stars": 0,
           "versions": 1,
@@ -287,7 +287,7 @@
         "status": "error",
         "url": "https://agentskill.sh/@me-news/ai-news-pro",
         "apiUrl": "https://agentskill.sh/api/skills/me-news%2Fai-news-pro",
-        "error": "The operation was aborted due to timeout",
+        "error": "HTTP 500 Internal Server Error",
         "metrics": {}
       }
     },
@@ -295,42 +295,22 @@
       "slug": "menews",
       "priority": 2,
       "data": {
-        "status": "ok",
+        "status": "error",
         "url": "https://agentskill.sh/@me-news/menews",
         "apiUrl": "https://agentskill.sh/api/skills/me-news%2Fmenews",
-        "metrics": {
-          "installs": 0,
-          "installs24h": 0,
-          "installs3d": 0,
-          "installs7d": 0,
-          "securityScore": 95,
-          "qualityScore": 0,
-          "githubStars": 1,
-          "ratingCount": 0
-        },
-        "verified": false,
-        "lastCrawledAt": "2026-08-20T10:58:14.602Z"
+        "error": "HTTP 500 Internal Server Error",
+        "metrics": {}
       }
     },
     {
       "slug": "aimpact",
       "priority": 3,
       "data": {
-        "status": "ok",
+        "status": "error",
         "url": "https://agentskill.sh/@me-news/aimpact",
         "apiUrl": "https://agentskill.sh/api/skills/me-news%2Faimpact",
-        "metrics": {
-          "installs": 0,
-          "installs24h": 0,
-          "installs3d": 0,
-          "installs7d": 0,
-          "securityScore": 95,
-          "qualityScore": 0,
-          "githubStars": 1,
-          "ratingCount": 0
-        },
-        "verified": false,
-        "lastCrawledAt": "2026-08-20T10:58:03.786Z"
+        "error": "HTTP 500 Internal Server Error",
+        "metrics": {}
       }
     },
     {
@@ -340,7 +320,7 @@
         "status": "error",
         "url": "https://agentskill.sh/@me-news/aimpact-crypto",
         "apiUrl": "https://agentskill.sh/api/skills/me-news%2Faimpact-crypto",
-        "error": "The operation was aborted due to timeout",
+        "error": "HTTP 500 Internal Server Error",
         "metrics": {}
       }
     },
@@ -351,7 +331,7 @@
         "status": "error",
         "url": "https://agentskill.sh/@me-news/aimpact-prediction-market",
         "apiUrl": "https://agentskill.sh/api/skills/me-news%2Faimpact-prediction-market",
-        "error": "The operation was aborted due to timeout",
+        "error": "HTTP 500 Internal Server Error",
         "metrics": {}
       }
     },
@@ -362,7 +342,7 @@
         "status": "error",
         "url": "https://agentskill.sh/@me-news/me-featured-events",
         "apiUrl": "https://agentskill.sh/api/skills/me-news%2Fme-featured-events",
-        "error": "The operation was aborted due to timeout",
+        "error": "HTTP 500 Internal Server Error",
         "metrics": {}
       }
     }
@@ -406,7 +386,7 @@
         "version": "1.0.11",
         "source": "clawhub",
         "metrics": {
-          "downloads": 1551,
+          "downloads": 1554,
           "installs": 36,
           "stars": 0,
           "versions": 3,
@@ -420,7 +400,7 @@
         "claimable": true,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-10-24T15:22:32.703Z",
+        "updatedAt": "2026-10-24T22:02:25.436Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
