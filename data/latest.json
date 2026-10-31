@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
-  "collectedAt": "2026-10-30T18:37:13.894Z",
-  "date": "2026-10-30",
+  "collectedAt": "2026-10-31T06:59:32.349Z",
+  "date": "2026-10-31",
   "timezone": "Asia/Hong_Kong",
   "repository": "me-news/agent-skills",
   "sharedPlatforms": {
@@ -446,7 +446,7 @@
         "version": "1.0.11",
         "source": "clawhub",
         "metrics": {
-          "downloads": 1586,
+          "downloads": 1590,
           "installs": 36,
           "stars": 0,
           "versions": 3,
@@ -460,7 +460,7 @@
         "claimable": true,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-10-30T10:03:32.848Z",
+        "updatedAt": "2026-10-30T23:58:55.704Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
