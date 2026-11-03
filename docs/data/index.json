@@ -45039,7 +45039,7 @@
     },
     {
       "schemaVersion": 5,
-      "collectedAt": "2026-11-03T07:54:40.314Z",
+      "collectedAt": "2026-11-03T20:05:54.248Z",
       "date": "2026-11-03",
       "timezone": "Asia/Hong_Kong",
       "repository": "me-news/agent-skills",
@@ -45457,7 +45457,7 @@
             "version": "0.9.1",
             "source": "clawhub",
             "metrics": {
-              "downloads": 783,
+              "downloads": 784,
               "installs": 16,
               "stars": 0,
               "versions": 1,
@@ -45471,7 +45471,7 @@
             "claimable": true,
             "verified": false,
             "contentZhAvailable": false,
-            "updatedAt": "2026-11-02T03:38:15.367Z",
+            "updatedAt": "2026-11-03T19:00:03.381Z",
             "note": "SkillHub metrics are stored separately and are not added to other platforms."
           }
         },
@@ -45485,7 +45485,7 @@
             "version": "1.0.11",
             "source": "clawhub",
             "metrics": {
-              "downloads": 1608,
+              "downloads": 1611,
               "installs": 36,
               "stars": 0,
               "versions": 3,
@@ -45499,7 +45499,7 @@
             "claimable": true,
             "verified": false,
             "contentZhAvailable": false,
-            "updatedAt": "2026-11-02T22:19:38.773Z",
+            "updatedAt": "2026-11-03T14:19:46.319Z",
             "note": "SkillHub metrics are stored separately and are not added to other platforms."
           }
         },
@@ -45541,7 +45541,7 @@
             "version": "0.8.1",
             "source": "clawhub",
             "metrics": {
-              "downloads": 779,
+              "downloads": 780,
               "installs": 16,
               "stars": 0,
               "versions": 1,
@@ -45555,7 +45555,7 @@
             "claimable": false,
             "verified": false,
             "contentZhAvailable": false,
-            "updatedAt": "2026-11-02T02:14:43.660Z",
+            "updatedAt": "2026-11-03T19:14:54.351Z",
             "note": "SkillHub metrics are stored separately and are not added to other platforms."
           }
         },
