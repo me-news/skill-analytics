@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
-  "collectedAt": "2026-11-06T19:57:02.877Z",
-  "date": "2026-11-06",
+  "collectedAt": "2026-11-07T07:09:54.499Z",
+  "date": "2026-11-07",
   "timezone": "Asia/Hong_Kong",
   "repository": "me-news/agent-skills",
   "sharedPlatforms": {
@@ -44,7 +44,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/menews",
         "version": "1.0.11",
         "metrics": {
-          "downloads": 1756,
+          "downloads": 1759,
           "installs": 36,
           "stars": 0,
           "versions": 12,
@@ -78,7 +78,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/aimpact-crypto",
         "version": "0.8.1",
         "metrics": {
-          "downloads": 851,
+          "downloads": 852,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -112,7 +112,7 @@
         "url": "https://clawhub.ai/me-news/skills/me-featured-events",
         "version": "1.1.0",
         "metrics": {
-          "downloads": 406,
+          "downloads": 408,
           "installs": 0,
           "stars": 0,
           "versions": 1,
@@ -446,7 +446,7 @@
         "version": "1.0.11",
         "source": "clawhub",
         "metrics": {
-          "downloads": 1634,
+          "downloads": 1639,
           "installs": 36,
           "stars": 0,
           "versions": 3,
@@ -460,7 +460,7 @@
         "claimable": true,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-11-06T06:16:35.604Z",
+        "updatedAt": "2026-11-07T03:55:45.228Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
@@ -530,7 +530,7 @@
         "version": "1.0.1",
         "source": "clawhub",
         "metrics": {
-          "downloads": 761,
+          "downloads": 763,
           "installs": 16,
           "stars": 0,
           "versions": 1,
@@ -544,7 +544,7 @@
         "claimable": true,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-11-06T10:40:57.855Z",
+        "updatedAt": "2026-11-07T06:56:40.410Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
