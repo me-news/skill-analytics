@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
-  "collectedAt": "2026-11-08T18:20:48.077Z",
-  "date": "2026-11-08",
+  "collectedAt": "2026-11-09T07:58:25.266Z",
+  "date": "2026-11-09",
   "timezone": "Asia/Hong_Kong",
   "repository": "me-news/agent-skills",
   "sharedPlatforms": {
@@ -27,7 +27,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/ai-news-pro",
         "version": "0.9.1",
         "metrics": {
-          "downloads": 894,
+          "downloads": 895,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -44,7 +44,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/menews",
         "version": "1.0.11",
         "metrics": {
-          "downloads": 1770,
+          "downloads": 1771,
           "installs": 36,
           "stars": 0,
           "versions": 12,
@@ -61,7 +61,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/aimpact",
         "version": "0.8.1",
         "metrics": {
-          "downloads": 845,
+          "downloads": 847,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -78,7 +78,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/aimpact-crypto",
         "version": "0.8.1",
         "metrics": {
-          "downloads": 860,
+          "downloads": 863,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -95,7 +95,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/aimpact-prediction-market",
         "version": "1.0.1",
         "metrics": {
-          "downloads": 834,
+          "downloads": 836,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -112,7 +112,7 @@
         "url": "https://clawhub.ai/me-news/skills/me-featured-events",
         "version": "1.1.0",
         "metrics": {
-          "downloads": 414,
+          "downloads": 418,
           "installs": 0,
           "stars": 0,
           "versions": 1,
@@ -284,126 +284,66 @@
       "slug": "ai-news-pro",
       "priority": 1,
       "data": {
-        "status": "ok",
+        "status": "error",
         "url": "https://agentskill.sh/@me-news/ai-news-pro",
         "apiUrl": "https://agentskill.sh/api/skills/me-news%2Fai-news-pro",
-        "metrics": {
-          "installs": 0,
-          "installs24h": 0,
-          "installs3d": 0,
-          "installs7d": 0,
-          "securityScore": 95,
-          "qualityScore": 0,
-          "githubStars": 1,
-          "ratingCount": 0
-        },
-        "verified": false,
-        "lastCrawledAt": "2026-08-20T10:57:54.283Z"
+        "error": "The operation was aborted due to timeout",
+        "metrics": {}
       }
     },
     {
       "slug": "menews",
       "priority": 2,
       "data": {
-        "status": "ok",
+        "status": "error",
         "url": "https://agentskill.sh/@me-news/menews",
         "apiUrl": "https://agentskill.sh/api/skills/me-news%2Fmenews",
-        "metrics": {
-          "installs": 0,
-          "installs24h": 0,
-          "installs3d": 0,
-          "installs7d": 0,
-          "securityScore": 95,
-          "qualityScore": 0,
-          "githubStars": 1,
-          "ratingCount": 0
-        },
-        "verified": false,
-        "lastCrawledAt": "2026-08-20T10:58:14.602Z"
+        "error": "The operation was aborted due to timeout",
+        "metrics": {}
       }
     },
     {
       "slug": "aimpact",
       "priority": 3,
       "data": {
-        "status": "ok",
+        "status": "error",
         "url": "https://agentskill.sh/@me-news/aimpact",
         "apiUrl": "https://agentskill.sh/api/skills/me-news%2Faimpact",
-        "metrics": {
-          "installs": 0,
-          "installs24h": 0,
-          "installs3d": 0,
-          "installs7d": 0,
-          "securityScore": 95,
-          "qualityScore": 0,
-          "githubStars": 1,
-          "ratingCount": 0
-        },
-        "verified": false,
-        "lastCrawledAt": "2026-08-20T10:58:03.786Z"
+        "error": "The operation was aborted due to timeout",
+        "metrics": {}
       }
     },
     {
       "slug": "aimpact-crypto",
       "priority": 4,
       "data": {
-        "status": "ok",
+        "status": "error",
         "url": "https://agentskill.sh/@me-news/aimpact-crypto",
         "apiUrl": "https://agentskill.sh/api/skills/me-news%2Faimpact-crypto",
-        "metrics": {
-          "installs": 0,
-          "installs24h": 0,
-          "installs3d": 0,
-          "installs7d": 0,
-          "securityScore": 95,
-          "qualityScore": 0,
-          "githubStars": 1,
-          "ratingCount": 0
-        },
-        "verified": false,
-        "lastCrawledAt": "2026-08-20T10:57:56.953Z"
+        "error": "The operation was aborted due to timeout",
+        "metrics": {}
       }
     },
     {
       "slug": "aimpact-prediction-market",
       "priority": 5,
       "data": {
-        "status": "ok",
+        "status": "error",
         "url": "https://agentskill.sh/@me-news/aimpact-prediction-market",
         "apiUrl": "https://agentskill.sh/api/skills/me-news%2Faimpact-prediction-market",
-        "metrics": {
-          "installs": 0,
-          "installs24h": 0,
-          "installs3d": 0,
-          "installs7d": 0,
-          "securityScore": 95,
-          "qualityScore": 0,
-          "githubStars": 1,
-          "ratingCount": 0
-        },
-        "verified": false,
-        "lastCrawledAt": "2026-08-20T10:58:00.488Z"
+        "error": "The operation was aborted due to timeout",
+        "metrics": {}
       }
     },
     {
       "slug": "me-featured-events",
       "priority": 6,
       "data": {
-        "status": "ok",
+        "status": "error",
         "url": "https://agentskill.sh/@me-news/me-featured-events",
         "apiUrl": "https://agentskill.sh/api/skills/me-news%2Fme-featured-events",
-        "metrics": {
-          "installs": 0,
-          "installs24h": 0,
-          "installs3d": 0,
-          "installs7d": 0,
-          "securityScore": 100,
-          "qualityScore": 0,
-          "githubStars": 1,
-          "ratingCount": 0
-        },
-        "verified": false,
-        "lastCrawledAt": "2026-08-20T10:58:12.536Z"
+        "error": "The operation was aborted due to timeout",
+        "metrics": {}
       }
     }
   ],
@@ -418,7 +358,7 @@
         "version": "0.9.1",
         "source": "clawhub",
         "metrics": {
-          "downloads": 795,
+          "downloads": 797,
           "installs": 16,
           "stars": 0,
           "versions": 1,
@@ -432,7 +372,7 @@
         "claimable": true,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-11-08T06:38:25.025Z",
+        "updatedAt": "2026-11-09T07:56:08.113Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
@@ -446,7 +386,7 @@
         "version": "1.0.11",
         "source": "clawhub",
         "metrics": {
-          "downloads": 1648,
+          "downloads": 1654,
           "installs": 36,
           "stars": 0,
           "versions": 3,
@@ -460,7 +400,7 @@
         "claimable": true,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-11-08T14:05:50.989Z",
+        "updatedAt": "2026-11-09T06:32:37.972Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
@@ -474,7 +414,7 @@
         "version": "0.8.1",
         "source": "clawhub",
         "metrics": {
-          "downloads": 747,
+          "downloads": 748,
           "installs": 16,
           "stars": 0,
           "versions": 1,
@@ -488,7 +428,7 @@
         "claimable": true,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-11-08T06:21:11.844Z",
+        "updatedAt": "2026-11-08T22:07:49.914Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
@@ -502,7 +442,7 @@
         "version": "0.8.1",
         "source": "clawhub",
         "metrics": {
-          "downloads": 789,
+          "downloads": 790,
           "installs": 16,
           "stars": 0,
           "versions": 1,
@@ -516,7 +456,7 @@
         "claimable": false,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-11-08T06:21:41.319Z",
+        "updatedAt": "2026-11-08T21:51:41.439Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
@@ -530,7 +470,7 @@
         "version": "1.0.1",
         "source": "clawhub",
         "metrics": {
-          "downloads": 766,
+          "downloads": 769,
           "installs": 16,
           "stars": 0,
           "versions": 1,
@@ -544,7 +484,7 @@
         "claimable": true,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-11-08T12:25:57.982Z",
+        "updatedAt": "2026-11-09T07:16:44.934Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
