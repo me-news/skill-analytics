@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
-  "collectedAt": "2026-11-11T20:11:50.435Z",
-  "date": "2026-11-11",
+  "collectedAt": "2026-11-12T08:19:42.632Z",
+  "date": "2026-11-12",
   "timezone": "Asia/Hong_Kong",
   "repository": "me-news/agent-skills",
   "sharedPlatforms": {
@@ -44,7 +44,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/menews",
         "version": "1.0.11",
         "metrics": {
-          "downloads": 1790,
+          "downloads": 1791,
           "installs": 36,
           "stars": 0,
           "versions": 12,
@@ -61,7 +61,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/aimpact",
         "version": "0.8.1",
         "metrics": {
-          "downloads": 855,
+          "downloads": 856,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -78,7 +78,7 @@
         "url": "https://clawhub.ai/jamesmenews/skills/aimpact-crypto",
         "version": "0.8.1",
         "metrics": {
-          "downloads": 870,
+          "downloads": 871,
           "installs": 16,
           "stars": 0,
           "versions": 2,
@@ -112,7 +112,7 @@
         "url": "https://clawhub.ai/me-news/skills/me-featured-events",
         "version": "1.1.0",
         "metrics": {
-          "downloads": 425,
+          "downloads": 426,
           "installs": 0,
           "stars": 0,
           "versions": 1,
@@ -418,7 +418,7 @@
         "version": "0.9.1",
         "source": "clawhub",
         "metrics": {
-          "downloads": 801,
+          "downloads": 803,
           "installs": 16,
           "stars": 0,
           "versions": 1,
@@ -432,7 +432,7 @@
         "claimable": true,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-11-11T13:54:14.400Z",
+        "updatedAt": "2026-11-12T07:37:35.578Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
@@ -446,7 +446,7 @@
         "version": "1.0.11",
         "source": "clawhub",
         "metrics": {
-          "downloads": 1669,
+          "downloads": 1673,
           "installs": 36,
           "stars": 0,
           "versions": 3,
@@ -460,7 +460,7 @@
         "claimable": true,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-11-11T11:43:01.225Z",
+        "updatedAt": "2026-11-11T23:00:45.284Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
@@ -474,7 +474,7 @@
         "version": "0.8.1",
         "source": "clawhub",
         "metrics": {
-          "downloads": 752,
+          "downloads": 753,
           "installs": 16,
           "stars": 0,
           "versions": 1,
@@ -488,7 +488,7 @@
         "claimable": true,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-11-11T15:27:47.356Z",
+        "updatedAt": "2026-11-12T03:20:35.196Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
@@ -502,7 +502,7 @@
         "version": "0.8.1",
         "source": "clawhub",
         "metrics": {
-          "downloads": 798,
+          "downloads": 800,
           "installs": 16,
           "stars": 0,
           "versions": 1,
@@ -516,7 +516,7 @@
         "claimable": false,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-11-11T15:35:47.203Z",
+        "updatedAt": "2026-11-12T06:22:44.245Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
@@ -530,7 +530,7 @@
         "version": "1.0.1",
         "source": "clawhub",
         "metrics": {
-          "downloads": 773,
+          "downloads": 774,
           "installs": 16,
           "stars": 0,
           "versions": 1,
@@ -544,7 +544,7 @@
         "claimable": true,
         "verified": false,
         "contentZhAvailable": false,
-        "updatedAt": "2026-11-11T15:31:42.309Z",
+        "updatedAt": "2026-11-12T07:27:36.887Z",
         "note": "SkillHub metrics are stored separately and are not added to other platforms."
       }
     },
